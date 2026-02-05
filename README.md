@@ -1,11 +1,22 @@
-<div align="center">
+# Hatchery BNBs
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Exclusive Airbnb listings and booking management for the Hatchery wedding event.
 
-  <h1>Built with AI Studio</h2>
+## Development
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run development server:
+   ```bash
+   npm run dev
+   ```
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Deployment
 
-</div>
+This project is configured for **Railway**.
+
+1. Connect your GitHub repository to Railway.
+2. Railway will automatically detect the `railway.json` and `package.json`.
+3. It will run `npm run build` and serve the app using `npm run preview`.
