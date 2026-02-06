@@ -72,6 +72,19 @@ const DetailPage: React.FC = () => {
               </div>
             </div>
 
+            {/* External Link Button */}
+            <div>
+              <a 
+                href={listing.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#FF5A5F] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E04B50] transition-all shadow-lg hover:shadow-red-900/30 transform hover:-translate-y-0.5 group"
+              >
+                <span>View original listing on Airbnb</span>
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+
             {/* Description */}
             <div>
               <h2 className="text-2xl font-serif text-white mb-4">About this place</h2>
@@ -106,19 +119,6 @@ const DetailPage: React.FC = () => {
                   />
                 ))}
               </div>
-            </div>
-
-            {/* External Link */}
-            <div className="pt-8 border-t border-neutral-800">
-              <a 
-                href={listing.url} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-yellow-500 hover:text-white transition-colors"
-              >
-                View original listing on Airbnb 
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
             </div>
 
           </div>
