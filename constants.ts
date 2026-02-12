@@ -1,4 +1,4 @@
-import { Listing } from './types';
+import { Listing, Hotel, Eatery } from './types';
 
 export const AIRBNB_LISTINGS: Listing[] = [
   {
@@ -61,69 +61,7 @@ export const AIRBNB_LISTINGS: Listing[] = [
     price_per_night: 275,
     distance_from_venue: { miles: 1.5, drive_minutes_range: [5, 8], method: "approx" }
   },
-  {
-    id: "airbnb_51836805",
-    name: "Cozy Hideaway",
-    type: "airbnb",
-    url: "https://www.airbnb.com/rooms/51836805",
-    address: { city: "La Crosse", state: "WI", country: "US" },
-    overview: "Cozy Hideaway features fire places, Jacuzzi & King Beds. A perfect retreat for relaxation and comfort in La Crosse.",
-    bedrooms: 3,
-    beds: 3,
-    bathrooms: 2.5,
-    max_guests: 6,
-    amenities: ["Fireplace", "Jacuzzi", "King Beds", "Wifi", "Kitchen"],
-    images: [
-      "https://a0.muscache.com/im/pictures/miso/Hosting-51836805/original/96bc14e4-0c76-4432-991f-4ccf981f7384.jpeg?aki_policy=xx_large",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-51836805/original/edff881c-ff46-4342-b734-026467597a47.jpeg?aki_policy=xx_large",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-51836805/original/b5ca4c21-2cfa-4890-8f17-7d3cfca7cce9.jpeg?aki_policy=xx_large",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-51836805/original/e281449b-44f7-4944-b848-b9d00fc45db0.jpeg?aki_policy=xx_large"
-    ],
-    price_per_night: 300,
-    distance_from_venue: { miles: 1.8, drive_minutes_range: [6, 10], method: "approx" }
-  },
-  {
-    id: "airbnb_42609696",
-    name: "Cozy Victorian Hideaway",
-    type: "airbnb",
-    url: "https://www.airbnb.com/rooms/42609696",
-    address: { city: "La Crosse", state: "WI", country: "US" },
-    overview: "Sit back and enjoy the multiple fireplaces, soaring ceilings, beautiful woodwork in one of La Crosse's original homes. Built in 1850's, this special place is located in the heart of La Crosse and close to everything, making it easy to plan your visit.",
-    bedrooms: 3,
-    beds: 3,
-    bathrooms: 2.5,
-    max_guests: 6,
-    amenities: ["Fireplace", "High Ceilings", "Woodwork", "Wifi", "Kitchen", "Dedicated workspace"],
-    images: [
-      "https://a0.muscache.com/im/pictures/miso/Hosting-42609696/original/7515af20-dcc6-4768-a27b-290ed7ccce5b.jpeg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-42609696/original/b48b7f00-f7ff-4a75-9893-ed130df82d77.jpeg?aki_policy=xx_large",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-42609696/original/8469cb00-6c84-4776-a450-72869b94d150.jpeg?aki_policy=xx_large",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-42609696/original/2450b7c2-d7cd-4d13-982f-36efdf920211.jpeg?aki_policy=xx_large"
-    ],
-    price_per_night: 290,
-    distance_from_venue: { miles: 1.1, drive_minutes_range: [4, 6], method: "approx" }
-  },
-  {
-    id: "airbnb_50008318",
-    name: "Swedish Storybook",
-    type: "airbnb",
-    url: "https://www.airbnb.com/rooms/50008318",
-    address: { city: "La Crosse", state: "WI", country: "US" },
-    overview: "Swedish Storybook home located in bluffs near hiking trails & stream. Experience the charm and nature right at your doorstep.",
-    bedrooms: 5,
-    beds: 7,
-    bathrooms: 3,
-    max_guests: 11,
-    amenities: ["Hiking Trails", "Stream View", "Wifi", "Kitchen", "Large Group Friendly"],
-    images: [
-      "https://a0.muscache.com/im/pictures/miso/Hosting-50008318/original/3cdb05dc-1861-47ef-a6c4-b420e4bc5f19.jpeg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-50008318/original/408a5c24-53a6-4b91-8c99-2f4f73bc3ef4.jpeg?aki_policy=xx_large",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-50008318/original/5c7a2e99-6980-4e23-befe-64c2250fcb91.jpeg?aki_policy=xx_large",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-50008318/original/0dd86051-c783-454a-a47b-00c54ac29d14.jpeg?aki_policy=xx_large"
-    ],
-    price_per_night: 400,
-    distance_from_venue: { miles: 3.5, drive_minutes_range: [10, 15], method: "approx" }
-  },
+
   {
     id: "airbnb_38241797",
     name: "Bluff Wildlife & Quiet",
@@ -206,5 +144,323 @@ export const AIRBNB_LISTINGS: Listing[] = [
     ],
     price_per_night: 450,
     distance_from_venue: { miles: 0.8, drive_minutes_range: [3, 5], method: "approx" }
+  }
+];
+
+export const HOTEL_LISTINGS: Hotel[] = [
+  {
+    id: "hotel_candlewood_suites_lacrosse_n",
+    name: "Candlewood Suites La Crosse N by IHG",
+    type: "lodging",
+    address: {
+      street: "56 Copeland Avenue",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54603",
+      country: "US"
+    },
+    phone: {
+      display: "(608) 785-1110",
+      e164: "+16087851110"
+    },
+    email: "visbell@kinseth.com",
+    website: "https://www.ihg.com/candlewood/hotels/us/en/la-crosse/lsecb/hoteldetail",
+    social: {
+      facebook: "https://www.facebook.com/CandlewoodSuitesLaX/"
+    },
+    maps_url: "https://www.google.com/maps/place/56+Copeland+Ave,+La+Crosse,+WI+54603",
+    badge: {
+      pet_policy: "PET_FRIENDLY"
+    },
+    distance_from_venue: {
+      miles: 4.8,
+      drive_minutes_range: [10, 12],
+      method: "approx"
+    },
+    notes: [
+      "More of a short-drive option; suitable for extended stays and guests prioritizing pet accommodation."
+    ]
+  },
+  {
+    id: "hotel_hampton_inn_suites_downtown",
+    name: "Hampton Inn & Suites La Crosse Downtown",
+    type: "lodging",
+    address: {
+      street: "511 3rd Street N",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "(608) 791-4004",
+      e164: "+16087914004"
+    },
+    email: "lsedo_hampton_suites@hilton.com",
+    website: "https://www.hilton.com/en/hotels/lsedohx-hampton-suites-la-crosse-downtown/",
+    maps_url: "https://www.google.com/maps/place/511+3rd+St+N,+La+Crosse,+WI+54601",
+    badge: {
+      pet_policy: "PET_FRIENDLY"
+    },
+    pet_policy_details: [
+      "Pets allowed (dogs and cats only, 2 total, up to 51 lbs per pet).",
+      "Service animals welcome.",
+      "Food and water bowls and off-leash area available."
+    ],
+    distance_from_venue: {
+      miles: 0.6,
+      drive_minutes_range: [4, 6],
+      walk_minutes_range: [12, 15],
+      method: "approx"
+    },
+    notes: [
+      "Downtown / walkable; strong option for guests traveling with pets."
+    ]
+  },
+  {
+    id: "hotel_fairfield_inn_suites_downtown",
+    name: "Fairfield Inn & Suites by Marriott La Crosse Downtown",
+    type: "lodging",
+    address: {
+      street: "434 3rd Street S",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "(608) 433-1000",
+      e164: "+16084331000"
+    },
+    website: "https://www.marriott.com/en-us/hotels/lsefi-fairfield-inn-and-suites-la-crosse-downtown/overview/",
+    maps_url: "https://www.google.com/maps/place/434+3rd+St+S,+La+Crosse,+WI+54601",
+    badge: {
+      pet_policy: "NO_PETS"
+    },
+    distance_from_venue: {
+      miles: 0.4,
+      drive_minutes_range: [3, 5],
+      walk_minutes_range: [8, 10],
+      method: "approx"
+    },
+    notes: [
+      "Downtown / walkable; predictable Marriott standards."
+    ]
+  },
+  {
+    id: "hotel_courtyard_riverfront",
+    name: "Courtyard by Marriott La Crosse Downtown / Mississippi Riverfront",
+    type: "lodging",
+    address: {
+      street: "500 Front Street S",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "(608) 782-1000",
+      e164: "+16087821000"
+    },
+    website: null,
+    maps_url: "https://www.google.com/maps/place/500+Front+St+S,+La+Crosse,+WI+54601",
+    badge: {
+      pet_policy: "NO_PETS"
+    },
+    distance_from_venue: {
+      miles: 0.2,
+      drive_minutes_range: [2, 3],
+      walk_minutes_range: [4, 6],
+      method: "approx"
+    },
+    notes: [
+      "Closest recommended hotel to the venue; riverfront and highly walkable.",
+      "Website: Marriott brand pages can change format; treat as unavailable if you need a stable literal URL."
+    ]
+  },
+  {
+    id: "hotel_radisson_lacrosse",
+    name: "Radisson Hotel La Crosse",
+    type: "lodging",
+    address: {
+      street: "200 Harborview Plaza",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "(608) 784-6680",
+      e164: "+16087846680"
+    },
+    website: "https://www.choicehotels.com/wisconsin/la-crosse/radisson-hotels/wi480",
+    maps_url: "https://www.google.com/maps/place/200+Harborview+Plaza,+La+Crosse,+WI+54601",
+    badge: {
+      pet_policy: "PET_FRIENDLY"
+    },
+    distance_from_venue: {
+      miles: 0.3,
+      drive_minutes_range: [2, 4],
+      walk_minutes_range: [6, 8],
+      method: "approx"
+    },
+    notes: [
+      "Downtown / riverfront; walkable to the venue."
+    ]
+  },
+  {
+    id: "hotel_charmant",
+    name: "The Charmant Hotel",
+    type: "lodging",
+    address: {
+      street: "101 State Street",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "(608) 519-8800",
+      e164: "+16085198800"
+    },
+    email: "info@thecharmanthotel.com",
+    website: "https://www.thecharmanthotel.com",
+    maps_url: "https://www.google.com/maps/place/101+State+St,+La+Crosse,+WI+54601",
+    badge: {
+      pet_policy: "NO_PETS"
+    },
+    distance_from_venue: {
+      miles: 0.5,
+      drive_minutes_range: [3, 5],
+      walk_minutes_range: [10, 12],
+      method: "approx"
+    },
+    notes: [
+      "Boutique downtown option; still walkable."
+    ]
+  }
+];
+
+export const EATERIES_LISTINGS: Eatery[] = [
+  {
+    id: "eat_breakfast_club_pub",
+    name: "The Breakfast Club & Pub",
+    type: "eatery",
+    category: "Breakfast & Brunch",
+    address: {
+      street: "214 Main Street",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "(608) 782-0050",
+      e164: "+16087820050"
+    },
+    website: "https://www.breakfastclub-pub.com",
+    maps_url: "https://www.google.com/maps/place/214+Main+St,+La+Crosse,+WI+54601"
+  },
+  {
+    id: "eat_piggys",
+    name: "Piggy’s Restaurant & Blues Lounge",
+    type: "eatery",
+    category: "American / BBQ",
+    address: {
+      street: "501 Front Street S",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "(608) 784-4877",
+      e164: "+16087844877"
+    },
+    email: "info@piggysrestaurant.com",
+    website: null,
+    maps_url: "https://www.google.com/maps/place/501+Front+St+S,+La+Crosse,+WI+54601"
+  },
+  {
+    id: "eat_buzzard_billys_lacrosse",
+    name: "Buzzard Billy's La Crosse",
+    type: "eatery",
+    category: "Cajun / American",
+    address: {
+      street: "222 Pearl St",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "608-796-2277",
+      e164: "+16087962277"
+    },
+    website: "https://lacrosse.buzzardbillys.com/",
+    social: {
+      facebook: "https://www.facebook.com/buzzard.billyslacrosse/"
+    },
+    maps_url: "https://www.google.com/maps/place/222+Pearl+St,+La+Crosse,+WI+54601"
+  },
+  {
+    id: "eat_lovechild_restaurant",
+    name: "Lovechild Restaurant",
+    type: "eatery",
+    category: "American (Modern)",
+    address: {
+      street: "300 3rd Street South",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "608-433-2234",
+      e164: "+16084332234"
+    },
+    website: "http://lovechildrestaurant.com/menu.html",
+    social: {
+      facebook: "https://www.facebook.com/LovechildRestaurant"
+    },
+    maps_url: "https://www.google.com/maps/place/300+3rd+St+S,+La+Crosse,+WI+54601"
+  },
+  {
+    id: "eat_freighthouse_restaurant",
+    name: "The Freighthouse Restaurant",
+    type: "eatery",
+    category: "Steakhouse",
+    address: {
+      street: "107 Vine Street",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "608-784-6211",
+      e164: "+16087846211"
+    },
+    website: "https://www.freighthouserestaurant.com/",
+    maps_url: "https://www.google.com/maps/place/107+Vine+St,+La+Crosse,+WI+54601"
+  },
+  {
+    id: "eat_le_chateau",
+    name: "Le Chateau",
+    type: "eatery",
+    category: "French",
+    address: {
+      street: "410 Cass St",
+      city: "La Crosse",
+      state: "WI",
+      zip: "54601",
+      country: "US"
+    },
+    phone: {
+      display: "608-782-6498",
+      e164: "+16087826498"
+    },
+    website: "https://lechateaulacrosse.com/",
+    maps_url: "https://www.google.com/maps/place/410+Cass+St,+La+Crosse,+WI+54601"
   }
 ];

@@ -9,6 +9,7 @@ export interface Address {
 export interface Distance {
   miles: number;
   drive_minutes_range: [number, number];
+  walk_minutes_range?: [number, number] | null;
   method: string;
 }
 
@@ -29,6 +30,47 @@ export interface Listing {
   distance_from_venue: Distance;
 }
 
+export interface Social {
+  facebook?: string;
+  instagram?: string;
+}
+
+export interface Phone {
+  display: string;
+  e164: string;
+}
+
+export interface Hotel {
+  id: string;
+  name: string;
+  type: 'lodging';
+  address: Address;
+  phone: Phone;
+  email?: string;
+  website?: string | null;
+  maps_url: string;
+  badge?: {
+    pet_policy: string;
+  };
+  pet_policy_details?: string[];
+  distance_from_venue: Distance;
+  notes?: string[];
+  social?: Social;
+}
+
+export interface Eatery {
+  id: string;
+  name: string;
+  type: 'eatery';
+  category: string;
+  address: Address;
+  phone?: Phone;
+  email?: string;
+  website?: string | null;
+  maps_url: string;
+  social?: Social;
+}
+
 export interface GuestInfo {
   firstName: string;
   lastName: string;
@@ -45,11 +87,11 @@ export interface BookingFormData {
   addressCity: string;
   addressState: string;
   addressZip: string;
-  
+
   // Reservation
   adults: number;
   children: number;
-  
+
   // Dynamic
   additionalGuests: GuestInfo[];
 }
