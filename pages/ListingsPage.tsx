@@ -16,7 +16,7 @@ const ListingsPage: React.FC = () => {
 
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
-            Wilson-Walleser <span className="text-yellow-600 italic">Lodging</span>
+            Wilson-Walleser <span className="text-gold-600 italic">Lodging</span>
           </h1>
           <p className="max-w-2xl mx-auto text-neutral-400 text-lg leading-relaxed">
             We have curated a selection of beautiful properties near the venue.

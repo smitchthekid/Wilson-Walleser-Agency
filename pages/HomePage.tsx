@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
             description: "Curated private properties near the venue.",
             link: "/airbnbs",
             icon: (
-                <svg className="w-12 h-12 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                <svg className="w-12 h-12 text-gold-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
             )
         },
         {
@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
             description: "Comfortable hotel stays for every budget.",
             link: "/hotels",
             icon: (
-                <svg className="w-12 h-12 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                <svg className="w-12 h-12 text-gold-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
             )
         },
         {
@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
             description: "Explore the best dining spots in La Crosse.",
             link: "/eateries",
             icon: (
-                <svg className="w-12 h-12 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                <svg className="w-12 h-12 text-gold-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             )
         }
     ];
@@ -36,14 +36,14 @@ const HomePage: React.FC = () => {
             <div className="py-20 px-4 text-center border-b border-neutral-900">
                 <div className="max-w-4xl mx-auto space-y-6">
                     <h1 className="text-5xl md:text-7xl font-serif text-white">
-                        Wilson-Walleser <span className="text-yellow-600 italic block mt-2">Guest Guide</span>
+                        Wilson-Walleser <span className="text-gold-600 italic block mt-2">Guest Guide</span>
                     </h1>
 
                     <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-neutral-400 text-lg md:text-xl font-serif tracking-wide mt-8">
                         <div className="flex items-center gap-2">
-                            <span className="text-yellow-600">June 27th, 2026</span>
+                            <span className="text-gold-600">June 27th, 2026</span>
                         </div>
-                        <div className="hidden md:block w-1.5 h-1.5 rounded-full bg-yellow-900/50"></div>
+                        <div className="hidden md:block w-1.5 h-1.5 rounded-full bg-gold-900/50"></div>
                         <div className="flex items-center gap-2">
                             <span>The Hatchery Riverside</span>
                         </div>
@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
                         <p className="text-neutral-400 mb-2 leading-relaxed font-light text-lg">
                             Located along the Mississippi River in Riverside Park, just steps from downtown La Crosse, Wisconsin.
                         </p>
-                        <p className="text-sm text-yellow-600/80 italic font-serif mt-2">
+                        <p className="text-sm text-gold-600/80 italic font-serif mt-2">
                             * On-site boutique hotel rooms are reserved for the wedding party.
                         </p>
                         <a href="https://hatcheryriverside.com" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm text-neutral-500 hover:text-white transition-colors underline decoration-neutral-800 underline-offset-4 font-medium uppercase tracking-wider text-xs">
@@ -68,12 +68,13 @@ const HomePage: React.FC = () => {
                             <Link
                                 key={idx}
                                 to={card.link}
-                                className="group block bg-neutral-900/40 border border-neutral-800/50 rounded-xl p-8 hover:border-yellow-700/30 transition-all duration-500 hover:bg-neutral-900/80 text-center h-full flex flex-col items-center justify-center hover:shadow-2xl hover:shadow-yellow-900/10"
+                                className="group block bg-neutral-900/40 border border-neutral-800/50 rounded-xl p-8 hover:border-gold-600/30 transition-all duration-500 hover:bg-neutral-900/80 text-center h-full flex flex-col items-center justify-center hover:shadow-2xl hover:shadow-gold-900/10"
                             >
                                 <div className="flex justify-center transform group-hover:scale-110 transition-transform duration-500 mb-6 opacity-80 group-hover:opacity-100">
+                                    {/* Icon color update handled in cards array below, but need to update the SVG there too. Wait, cards are defined at top of file. */}
                                     {card.icon}
                                 </div>
-                                <h2 className="text-xl font-serif text-white mb-3 group-hover:text-yellow-500 transition-colors tracking-wide">
+                                <h2 className="text-xl font-serif text-white mb-3 group-hover:text-gold-500 transition-colors tracking-wide">
                                     {card.title}
                                 </h2>
                                 <p className="text-neutral-500 group-hover:text-neutral-400 transition-colors text-sm font-light leading-relaxed">
@@ -90,8 +91,8 @@ const HomePage: React.FC = () => {
             <div className="py-16 px-4 bg-neutral-900/30">
                 <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Wedding Website CTA */}
-                    <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl text-center space-y-4 hover:border-yellow-900/40 transition-colors">
-                        <div className="w-12 h-12 mx-auto bg-neutral-800 rounded-full flex items-center justify-center text-yellow-600 mb-2">
+                    <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl text-center space-y-4 hover:border-gold-900/40 transition-colors">
+                        <div className="w-12 h-12 mx-auto bg-neutral-800 rounded-full flex items-center justify-center text-gold-600 mb-2">
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         </div>
                         <h3 className="text-2xl font-serif text-white">Official Wedding Website</h3>
@@ -104,8 +105,8 @@ const HomePage: React.FC = () => {
                     </div>
 
                     {/* Address Update CTA */}
-                    <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl text-center space-y-4 hover:border-yellow-900/40 transition-colors">
-                        <div className="w-12 h-12 mx-auto bg-neutral-800 rounded-full flex items-center justify-center text-yellow-600 mb-2">
+                    <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl text-center space-y-4 hover:border-gold-900/40 transition-colors">
+                        <div className="w-12 h-12 mx-auto bg-neutral-800 rounded-full flex items-center justify-center text-gold-600 mb-2">
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                         </div>
                         <h3 className="text-2xl font-serif text-white">We Need Your Info!</h3>
@@ -116,7 +117,7 @@ const HomePage: React.FC = () => {
                             href="https://www.zola.com/addr/vvMMmNKlQ"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block w-full py-3 px-6 bg-yellow-600 hover:bg-yellow-500 text-black rounded font-bold uppercase tracking-wide transition-all hover:shadow-[0_0_20px_rgba(202,138,4,0.2)] mt-2"
+                            className="block w-full py-3 px-6 bg-gold-600 hover:bg-gold-500 text-black rounded font-bold uppercase tracking-wide transition-all hover:shadow-[0_0_20px_rgba(202,138,4,0.2)] mt-2"
                         >
                             Update My Address
                         </a>

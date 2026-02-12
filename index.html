@@ -20,11 +20,27 @@
             sans: ['"Inter"', 'sans-serif'],
             display: ['"Cinzel"', 'serif'],
           },
+          colors: {
+            gold: {
+              500: 'var(--color-gold-500)',
+              600: 'var(--color-gold-600)',
+              900: 'var(--color-gold-900)',
+            }
+          }
         }
       }
     }
   </script>
   <style>
+    :root {
+      --color-gold-500: #D4AF37;
+      /* Metallic Gold Default */
+      --color-gold-600: #AA8C2C;
+      /* Metallic Gold Darker */
+      --color-gold-900: #42360E;
+      /* Metallic Gold Deep */
+    }
+
     /* Custom Scrollbar for dark theme */
     ::-webkit-scrollbar {
       width: 8px;
@@ -35,12 +51,12 @@
     }
 
     ::-webkit-scrollbar-thumb {
-      background: #ca8a04;
+      background: var(--color-gold-600);
       border-radius: 4px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: #eab308;
+      background: var(--color-gold-500);
     }
   </style>
   <script type="importmap">

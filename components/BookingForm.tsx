@@ -95,12 +95,12 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
         </div>
         <h3 className="text-2xl font-serif text-white mb-2">Request Sent!</h3>
         <p className="text-neutral-400 mb-6">
-          We have received your reservation request for <span className="text-yellow-500">{listing.name}</span>.
+          We have received your reservation request for <span className="text-gold-500">{listing.name}</span>.
           We'll be in touch shortly to confirm details.
         </p>
         <button
           onClick={() => setStatus('idle')}
-          className="text-yellow-500 hover:text-yellow-400 underline underline-offset-4"
+          className="text-gold-500 hover:text-gold-400 underline underline-offset-4"
         >
           Submit another request
         </button>
@@ -108,21 +108,21 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
     );
   }
 
-  const inputClasses = "w-full p-3 rounded bg-gray-100 text-black border border-gray-300 focus:border-yellow-600 focus:ring-2 focus:ring-yellow-600/20 outline-none transition-all placeholder:text-gray-500";
+  const inputClasses = "w-full p-3 rounded bg-gray-100 text-black border border-gray-300 focus:border-gold-600 focus:ring-2 focus:ring-gold-600/20 outline-none transition-all placeholder:text-gray-500";
   const labelClasses = "block text-sm font-medium text-neutral-400 mb-1 uppercase tracking-wide";
 
   return (
     <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 shadow-2xl sticky top-24">
       <div className="mb-6 pb-6 border-b border-neutral-800">
         <h3 className="text-2xl font-serif text-white mb-1">Book Your Stay</h3>
-        <p className="text-yellow-600 font-medium">${listing.price_per_night} <span className="text-neutral-500 text-sm font-normal">/ night</span></p>
+        <p className="text-gold-600 font-medium">${listing.price_per_night} <span className="text-neutral-500 text-sm font-normal">/ night</span></p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Contact Info */}
         <div className="space-y-4">
           <h4 className="text-lg font-serif text-white flex items-center gap-2">
-            <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full"></span> Contact Details
+            <span className="w-1.5 h-1.5 bg-gold-500 rounded-full"></span> Contact Details
           </h4>
 
           <div>
@@ -145,7 +145,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
         {/* Address */}
         <div className="space-y-4">
           <h4 className="text-lg font-serif text-white flex items-center gap-2">
-            <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full"></span> Mailing Address
+            <span className="w-1.5 h-1.5 bg-gold-500 rounded-full"></span> Mailing Address
           </h4>
           <div className="grid grid-cols-1 gap-4">
             <div>
@@ -193,8 +193,8 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
         {/* Dynamic Guest Fields */}
         {formData.additionalGuests.length > 0 && (
           <div className="space-y-4 pt-4 border-t border-neutral-800 animate-fade-in">
-            <div className="bg-yellow-900/20 border border-yellow-900/30 p-4 rounded mb-4">
-              <p className="text-yellow-200 text-sm">
+            <div className="bg-gold-900/20 border border-gold-900/30 p-4 rounded mb-4">
+              <p className="text-gold-500 text-sm">
                 Since you are booking for a group, please provide details for your additional guests so we can accommodate everyone comfortably.
               </p>
             </div>
@@ -227,7 +227,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
           disabled={status === 'submitting'}
           className={`w-full py-4 px-6 rounded font-bold uppercase tracking-wider transition-all transform active:scale-95 ${status === 'submitting'
             ? 'bg-neutral-700 text-neutral-400 cursor-not-allowed'
-            : 'bg-yellow-600 hover:bg-yellow-500 text-black hover:shadow-[0_0_20px_rgba(202,138,4,0.3)]'
+            : 'bg-gold-600 hover:bg-gold-500 text-black hover:shadow-[0_0_20px_rgba(202,138,4,0.3)]'
             }`}
         >
           {status === 'submitting' ? 'Processing...' : 'Request Reservation'}
