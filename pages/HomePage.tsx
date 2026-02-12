@@ -39,44 +39,44 @@ const HomePage: React.FC = () => {
                         Wilson-Walleser <span className="text-yellow-600 italic block mt-2">Guest Guide</span>
                     </h1>
 
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-neutral-300 text-lg md:text-xl font-medium tracking-wide mt-8">
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-neutral-400 text-lg md:text-xl font-serif tracking-wide mt-8">
                         <div className="flex items-center gap-2">
                             <span className="text-yellow-600">June 27th, 2026</span>
                         </div>
-                        <div className="hidden md:block w-2 h-2 rounded-full bg-neutral-800"></div>
+                        <div className="hidden md:block w-1.5 h-1.5 rounded-full bg-yellow-900/50"></div>
                         <div className="flex items-center gap-2">
                             <span>The Hatchery Riverside</span>
                         </div>
                     </div>
 
-                    <div className="max-w-2xl mx-auto mt-8 p-6 bg-neutral-900/50 rounded-2xl border border-neutral-800">
-                        <h3 className="text-xl font-serif text-white mb-2">Hatchery Riverside Hotel & Event Venue</h3>
-                        <p className="text-neutral-400 mb-4 leading-relaxed">
+                    <div className="max-w-2xl mx-auto mt-12 text-center">
+                        <h3 className="text-2xl font-serif text-white mb-3">Hatchery Riverside Hotel & Event Venue</h3>
+                        <p className="text-neutral-400 mb-2 leading-relaxed font-light text-lg">
                             Located along the Mississippi River in Riverside Park, just steps from downtown La Crosse, Wisconsin.
                         </p>
-                        <p className="text-sm text-yellow-600/80 italic">
+                        <p className="text-sm text-yellow-600/80 italic font-serif mt-2">
                             * On-site boutique hotel rooms are reserved for the wedding party.
                         </p>
-                        <a href="https://hatcheryriverside.com" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm text-neutral-500 hover:text-white transition-colors underline decoration-neutral-700 underline-offset-4">
+                        <a href="https://hatcheryriverside.com" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm text-neutral-500 hover:text-white transition-colors underline decoration-neutral-800 underline-offset-4 font-medium uppercase tracking-wider text-xs">
                             hatcheryriverside.com
                         </a>
                     </div>
 
                     {/* Navigation Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto mt-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto mt-16 px-4">
                         {cards.map((card, idx) => (
                             <Link
                                 key={idx}
                                 to={card.link}
-                                className="group block bg-neutral-900 border border-neutral-800 rounded-2xl p-8 hover:border-yellow-700/50 transition-all duration-300 hover:bg-neutral-800/50 hover:-translate-y-2 text-center h-full flex flex-col items-center justify-center"
+                                className="group block bg-neutral-900/40 border border-neutral-800/50 rounded-xl p-8 hover:border-yellow-700/30 transition-all duration-500 hover:bg-neutral-900/80 text-center h-full flex flex-col items-center justify-center hover:shadow-2xl hover:shadow-yellow-900/10"
                             >
-                                <div className="flex justify-center group-hover:scale-110 transition-transform duration-300 mb-6">
+                                <div className="flex justify-center transform group-hover:scale-110 transition-transform duration-500 mb-6 opacity-80 group-hover:opacity-100">
                                     {card.icon}
                                 </div>
-                                <h2 className="text-2xl font-serif text-white mb-3 group-hover:text-yellow-500 transition-colors">
+                                <h2 className="text-xl font-serif text-white mb-3 group-hover:text-yellow-500 transition-colors tracking-wide">
                                     {card.title}
                                 </h2>
-                                <p className="text-neutral-400 group-hover:text-neutral-300 transition-colors text-sm">
+                                <p className="text-neutral-500 group-hover:text-neutral-400 transition-colors text-sm font-light leading-relaxed">
                                     {card.description}
                                 </p>
                             </Link>
