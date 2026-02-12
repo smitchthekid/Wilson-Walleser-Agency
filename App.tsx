@@ -5,6 +5,7 @@ import DetailPage from './pages/DetailPage';
 import HomePage from './pages/HomePage';
 import HotelsPage from './pages/HotelsPage';
 import EateriesPage from './pages/EateriesPage';
+import FlightsTransportPage from './pages/FlightsTransportPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -24,10 +25,11 @@ const Header = () => (
           </div>
           <span className="text-xl font-serif font-bold text-yellow-500 tracking-wide uppercase">Wilson-Walleser</span>
         </Link>
-        <nav className="flex gap-6">
+        <nav className="hidden md:flex gap-6">
           <Link to="/airbnbs" className="text-sm font-medium text-neutral-300 hover:text-yellow-500 transition-colors">Airbnbs</Link>
           <Link to="/hotels" className="text-sm font-medium text-neutral-300 hover:text-yellow-500 transition-colors">Hotels</Link>
           <Link to="/eateries" className="text-sm font-medium text-neutral-300 hover:text-yellow-500 transition-colors">Eateries</Link>
+          <Link to="/flights-transport" className="text-sm font-medium text-neutral-300 hover:text-yellow-500 transition-colors">Flights & Transport</Link>
         </nav>
       </div>
     </div>
@@ -56,6 +58,7 @@ export default function App() {
             <Route path="/listing/:id" element={<DetailPage />} />
             <Route path="/hotels" element={<HotelsPage />} />
             <Route path="/eateries" element={<EateriesPage />} />
+            <Route path="/flights-transport" element={<FlightsTransportPage />} />
           </Routes>
         </main>
         <Footer />

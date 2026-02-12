@@ -338,7 +338,38 @@ export const HOTEL_LISTINGS: Hotel[] = [
     notes: [
       "Boutique downtown option; still walkable."
     ]
+  },
+  {
+    id: "hotel_stoney_creek",
+    name: "Stoney Creek Hotel La Crosse – Onalaska",
+    type: "lodging",
+    address: {
+      street: "3060 S Kinney Coulee Road",
+      city: "Onalaska",
+      state: "WI",
+      zip: "54650",
+      country: "US"
+    },
+    phone: {
+      display: "608-781-3060",
+      e164: "+16087813060"
+    },
+    website: "https://www.stoneycreekhotels.com/hotel/la-crosse/",
+    maps_url: "https://www.google.com/maps/place/3060+S+Kinney+Coulee+Rd,+Onalaska,+WI+54650",
+    badge: {
+      pet_policy: "PET_FRIENDLY"
+    },
+    distance_from_venue: {
+      miles: 6.5,
+      drive_minutes_range: [15, 20],
+      method: "approx"
+    },
+    notes: [
+      "Lodge-style hotel with indoor/outdoor heated pool and hot tub.",
+      "Located in Onalaska, about a 20-minute drive to downtown."
+    ]
   }
+
 ];
 
 export const EATERIES_LISTINGS: Eatery[] = [
