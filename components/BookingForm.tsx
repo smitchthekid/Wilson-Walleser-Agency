@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React from 'react';
 import { Listing, BookingFormData, GuestInfo } from '../types';
+
+const { useState, useEffect } = React;
 
 interface BookingFormProps {
   listing: Listing;
@@ -29,7 +31,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
 
     setFormData(prev => {
       const currentAdditional = [...prev.additionalGuests];
-      
+
       if (currentAdditional.length < requiredAdditionalGuests) {
         // Add needed fields
         const needed = requiredAdditionalGuests - currentAdditional.length;
@@ -40,7 +42,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
         // Remove excess fields
         currentAdditional.splice(requiredAdditionalGuests);
       }
-      
+
       return {
         ...prev,
         additionalGuests: currentAdditional
@@ -70,7 +72,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-    
+
     // Simulate API delay
     setTimeout(() => {
       console.log('Form Data to be sent to GAS:', {
@@ -93,10 +95,10 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
         </div>
         <h3 className="text-2xl font-serif text-white mb-2">Request Sent!</h3>
         <p className="text-neutral-400 mb-6">
-          We have received your reservation request for <span className="text-yellow-500">{listing.name}</span>. 
+          We have received your reservation request for <span className="text-yellow-500">{listing.name}</span>.
           We'll be in touch shortly to confirm details.
         </p>
-        <button 
+        <button
           onClick={() => setStatus('idle')}
           className="text-yellow-500 hover:text-yellow-400 underline underline-offset-4"
         >
@@ -122,12 +124,12 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
           <h4 className="text-lg font-serif text-white flex items-center gap-2">
             <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full"></span> Contact Details
           </h4>
-          
+
           <div>
             <label className={labelClasses} htmlFor="fullName">Full Name</label>
             <input required type="text" id="fullName" name="fullName" value={formData.fullName} onChange={handleChange} className={inputClasses} placeholder="John Doe" />
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label className={labelClasses} htmlFor="email">Email</label>
@@ -142,35 +144,35 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
 
         {/* Address */}
         <div className="space-y-4">
-           <h4 className="text-lg font-serif text-white flex items-center gap-2">
+          <h4 className="text-lg font-serif text-white flex items-center gap-2">
             <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full"></span> Mailing Address
           </h4>
-           <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4">
             <div>
               <label className={labelClasses} htmlFor="addressStreet">Street Address</label>
               <input required type="text" id="addressStreet" name="addressStreet" value={formData.addressStreet} onChange={handleChange} className={inputClasses} />
             </div>
-             <div className="grid grid-cols-2 gap-4">
-               <div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
                 <label className={labelClasses} htmlFor="addressApt">Apt/Unit <span className="text-neutral-600 normal-case">(Optional)</span></label>
                 <input type="text" id="addressApt" name="addressApt" value={formData.addressApt} onChange={handleChange} className={inputClasses} />
               </div>
-               <div>
+              <div>
                 <label className={labelClasses} htmlFor="addressCity">City</label>
                 <input required type="text" id="addressCity" name="addressCity" value={formData.addressCity} onChange={handleChange} className={inputClasses} />
               </div>
-             </div>
-             <div className="grid grid-cols-2 gap-4">
-               <div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
                 <label className={labelClasses} htmlFor="addressState">State</label>
                 <input required type="text" id="addressState" name="addressState" value={formData.addressState} onChange={handleChange} className={inputClasses} />
               </div>
-               <div>
+              <div>
                 <label className={labelClasses} htmlFor="addressZip">Zip Code</label>
                 <input required type="text" id="addressZip" name="addressZip" value={formData.addressZip} onChange={handleChange} className={inputClasses} />
               </div>
-             </div>
-           </div>
+            </div>
+          </div>
         </div>
 
         {/* Guest Counts */}
@@ -191,47 +193,46 @@ const BookingForm: React.FC<BookingFormProps> = ({ listing }) => {
         {/* Dynamic Guest Fields */}
         {formData.additionalGuests.length > 0 && (
           <div className="space-y-4 pt-4 border-t border-neutral-800 animate-fade-in">
-             <div className="bg-yellow-900/20 border border-yellow-900/30 p-4 rounded mb-4">
+            <div className="bg-yellow-900/20 border border-yellow-900/30 p-4 rounded mb-4">
               <p className="text-yellow-200 text-sm">
                 Since you are booking for a group, please provide details for your additional guests so we can accommodate everyone comfortably.
               </p>
-             </div>
+            </div>
             {formData.additionalGuests.map((guest, idx) => (
               <div key={idx} className="bg-neutral-800/50 p-4 rounded border border-neutral-700">
                 <h5 className="text-white font-medium mb-3 text-sm">Guest #{idx + 2}</h5>
                 <div className="grid grid-cols-1 gap-3">
-                   <div className="grid grid-cols-2 gap-3">
-                      <div>
-                        <label className="text-xs text-neutral-400 mb-1 block">First Name</label>
-                        <input required type="text" value={guest.firstName} onChange={(e) => handleGuestChange(idx, 'firstName', e.target.value)} className={inputClasses} />
-                      </div>
-                      <div>
-                        <label className="text-xs text-neutral-400 mb-1 block">Last Name</label>
-                        <input required type="text" value={guest.lastName} onChange={(e) => handleGuestChange(idx, 'lastName', e.target.value)} className={inputClasses} />
-                      </div>
-                   </div>
-                   <div>
-                      <label className="text-xs text-neutral-400 mb-1 block">Age</label>
-                      <input required type="number" min="0" max="120" value={guest.age || ''} onChange={(e) => handleGuestChange(idx, 'age', parseInt(e.target.value) || 0)} className={inputClasses} />
-                   </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="text-xs text-neutral-400 mb-1 block">First Name</label>
+                      <input required type="text" value={guest.firstName} onChange={(e) => handleGuestChange(idx, 'firstName', e.target.value)} className={inputClasses} />
+                    </div>
+                    <div>
+                      <label className="text-xs text-neutral-400 mb-1 block">Last Name</label>
+                      <input required type="text" value={guest.lastName} onChange={(e) => handleGuestChange(idx, 'lastName', e.target.value)} className={inputClasses} />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="text-xs text-neutral-400 mb-1 block">Age</label>
+                    <input required type="number" min="0" max="120" value={guest.age || ''} onChange={(e) => handleGuestChange(idx, 'age', parseInt(e.target.value) || 0)} className={inputClasses} />
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         )}
 
-        <button 
-          type="submit" 
+        <button
+          type="submit"
           disabled={status === 'submitting'}
-          className={`w-full py-4 px-6 rounded font-bold uppercase tracking-wider transition-all transform active:scale-95 ${
-            status === 'submitting' 
-              ? 'bg-neutral-700 text-neutral-400 cursor-not-allowed' 
-              : 'bg-yellow-600 hover:bg-yellow-500 text-black hover:shadow-[0_0_20px_rgba(202,138,4,0.3)]'
-          }`}
+          className={`w-full py-4 px-6 rounded font-bold uppercase tracking-wider transition-all transform active:scale-95 ${status === 'submitting'
+            ? 'bg-neutral-700 text-neutral-400 cursor-not-allowed'
+            : 'bg-yellow-600 hover:bg-yellow-500 text-black hover:shadow-[0_0_20px_rgba(202,138,4,0.3)]'
+            }`}
         >
           {status === 'submitting' ? 'Processing...' : 'Request Reservation'}
         </button>
-        
+
         <p className="text-center text-xs text-neutral-600 mt-4">
           This form sends a reservation request. No payment is processed immediately.
         </p>
