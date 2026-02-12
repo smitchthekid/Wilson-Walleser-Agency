@@ -54,12 +54,7 @@ const HomePage: React.FC = () => {
                         <p className="text-neutral-400 mb-2 leading-relaxed font-light text-lg">
                             Located along the Mississippi River in Riverside Park, just steps from downtown La Crosse, Wisconsin.
                         </p>
-                        <p className="text-sm text-gold-600/80 italic font-serif mt-2">
-                            * On-site boutique hotel rooms are reserved for the wedding party.
-                        </p>
-                        <a href="https://hatcheryriverside.com" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm text-neutral-500 hover:text-white transition-colors underline decoration-neutral-800 underline-offset-4 font-medium uppercase tracking-wider text-xs">
-                            hatcheryriverside.com
-                        </a>
+
                     </div>
 
                     {/* Navigation Cards */}
@@ -84,42 +79,75 @@ const HomePage: React.FC = () => {
                         ))}
                     </div>
 
+                    <p className="text-sm text-gold-600/80 italic font-serif mt-8 mb-4">
+                        * On-site boutique hotel rooms are reserved for the wedding party.
+                    </p>
+
                 </div>
             </div>
 
             {/* CTAs Section */}
             <div className="py-16 px-4 bg-neutral-900/30">
-                <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    {/* Venue CTA */}
+                    <div className="group bg-neutral-900 border border-neutral-800 p-0 rounded-2xl text-center overflow-hidden hover:border-gold-900/40 transition-all hover:shadow-xl hover:shadow-gold-900/10 flex flex-col h-full">
+                        <div className="h-48 overflow-hidden relative">
+                            <img
+                                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+                                alt="Hatchery Riverside Venue"
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
+                            <div className="absolute bottom-4 left-0 right-0">
+                                <h3 className="text-2xl font-serif text-white drop-shadow-md">Hatchery <span className="text-gold-500 italic">Riverside</span></h3>
+                            </div>
+                        </div>
+                        <div className="p-6 flex flex-col flex-grow">
+                            <p className="text-neutral-400 text-sm mb-4 flex-grow leading-relaxed">
+                                Historic riverside property set within Riverside Park along the Mississippi River. Luxury boutique hotel rooms and event space.
+                            </p>
+                            <a
+                                href="https://www.hatcheryriverside.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-full py-3 px-6 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 hover:text-white rounded font-medium transition-colors border border-neutral-700/50"
+                            >
+                                Visit Venue Website
+                            </a>
+                        </div>
+                    </div>
+
                     {/* Wedding Website CTA */}
-                    <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl text-center space-y-4 hover:border-gold-900/40 transition-colors">
+                    <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl text-center space-y-4 hover:border-gold-900/40 transition-colors flex flex-col justify-center h-full">
                         <div className="w-12 h-12 mx-auto bg-neutral-800 rounded-full flex items-center justify-center text-gold-600 mb-2">
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         </div>
-                        <h3 className="text-2xl font-serif text-white">Official Wedding Website</h3>
+                        <h3 className="text-2xl font-serif text-white">Guest Guide</h3>
                         <p className="text-neutral-400 text-sm">
-                            You’re currently viewing the Wilson–Walleser travel guide to help you plan your trip and travel plans. Be on the lookout for RSVPs by mail or text in the coming months.
+                            You’re currently viewing the Wilson–Walleser travel guide. Be on the lookout for RSVPs by mail or text.
                         </p>
-                        <button disabled className="w-full py-3 px-6 bg-neutral-800 text-neutral-500 rounded font-medium cursor-not-allowed border border-neutral-700/50 mt-2">
-                            Coming Soon
-                        </button>
+                        <div className="mt-auto pt-2">
+                            <span className="text-xs text-neutral-600 uppercase tracking-widest font-semibold">Official Website Coming Soon</span>
+                        </div>
                     </div>
 
                     {/* Address Update CTA */}
-                    <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl text-center space-y-4 hover:border-gold-900/40 transition-colors">
+                    <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl text-center space-y-4 hover:border-gold-900/40 transition-colors flex flex-col justify-center h-full">
                         <div className="w-12 h-12 mx-auto bg-neutral-800 rounded-full flex items-center justify-center text-gold-600 mb-2">
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                         </div>
-                        <h3 className="text-2xl font-serif text-white">We Need Your Info!</h3>
+                        <h3 className="text-2xl font-serif text-white leading-tight">Need to Update your contact details?</h3>
                         <p className="text-neutral-400 text-sm">
-                            Please help us update our guest list with your current mailing address and contact information.
+                            Lookup your profile to update your address, guest details, or provide your phone number for text updates.
                         </p>
                         <a
                             href="https://www.zola.com/addr/vvMMmNKlQ"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block w-full py-3 px-6 bg-gold-600 hover:bg-gold-500 text-black rounded font-bold uppercase tracking-wide transition-all hover:shadow-[0_0_20px_rgba(202,138,4,0.2)] mt-2"
+                            className="block w-full py-3 px-6 bg-gold-600 hover:bg-gold-500 text-black rounded font-bold uppercase tracking-wide transition-all hover:shadow-[0_0_20px_rgba(202,138,4,0.2)] mt-auto"
                         >
-                            Update My Address
+                            Update Guest Details
                         </a>
                     </div>
                 </div>
