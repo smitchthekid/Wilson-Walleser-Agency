@@ -61,6 +61,28 @@ const HomePage: React.FC = () => {
                             hatcheryriverside.com
                         </a>
                     </div>
+
+                    {/* Navigation Cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto mt-12">
+                        {cards.map((card, idx) => (
+                            <Link
+                                key={idx}
+                                to={card.link}
+                                className="group block bg-neutral-900 border border-neutral-800 rounded-2xl p-8 hover:border-yellow-700/50 transition-all duration-300 hover:bg-neutral-800/50 hover:-translate-y-2 text-center h-full flex flex-col items-center justify-center"
+                            >
+                                <div className="flex justify-center group-hover:scale-110 transition-transform duration-300 mb-6">
+                                    {card.icon}
+                                </div>
+                                <h2 className="text-2xl font-serif text-white mb-3 group-hover:text-yellow-500 transition-colors">
+                                    {card.title}
+                                </h2>
+                                <p className="text-neutral-400 group-hover:text-neutral-300 transition-colors text-sm">
+                                    {card.description}
+                                </p>
+                            </Link>
+                        ))}
+                    </div>
+
                 </div>
             </div>
 
@@ -98,51 +120,6 @@ const HomePage: React.FC = () => {
                         >
                             Update My Address
                         </a>
-                    </div>
-                </div>
-            </div>
-
-            {/* Accommodations & Guide Section */}
-            <div className="flex-grow py-16 px-4">
-                <div className="max-w-6xl mx-auto space-y-8">
-
-                    {/* Hero Banner Underlay */}
-                    <div className="relative w-full h-[300px] md:h-[400px] rounded-3xl overflow-hidden mb-12 group">
-                        {/* Background Image Placeholder - using a gradient/pattern for now since I can't upload images, but set up for it */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-neutral-900">
-                            {/* If user had an image, it would go here: <img src="..." className="w-full h-full object-cover" /> */}
-                            <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-                        </div>
-                        <div className="absolute inset-0 bg-black/40"></div>
-
-                        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                            <h2 className="text-4xl md:text-5xl font-serif text-white mb-4 drop-shadow-lg">
-                                La Crosse <span className="text-yellow-500 italic">Travel Guide</span>
-                            </h2>
-                            <p className="text-lg md:text-xl text-white/90 max-w-2xl drop-shadow-md">
-                                Information on where to stay, eat, and explore during your visit.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
-                        {cards.map((card, idx) => (
-                            <Link
-                                key={idx}
-                                to={card.link}
-                                className="group block bg-neutral-900 border border-neutral-800 rounded-2xl p-8 hover:border-yellow-700/50 transition-all duration-300 hover:bg-neutral-800/50 hover:-translate-y-2 text-center h-full flex flex-col items-center justify-center"
-                            >
-                                <div className="flex justify-center group-hover:scale-110 transition-transform duration-300 mb-6">
-                                    {card.icon}
-                                </div>
-                                <h2 className="text-2xl font-serif text-white mb-3 group-hover:text-yellow-500 transition-colors">
-                                    {card.title}
-                                </h2>
-                                <p className="text-neutral-400 group-hover:text-neutral-300 transition-colors text-sm">
-                                    {card.description}
-                                </p>
-                            </Link>
-                        ))}
                     </div>
                 </div>
             </div>
