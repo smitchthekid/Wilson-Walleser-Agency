@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Bidenatrial';
+  src: url('/fonts/Bidenatrial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CrownAvenue';
+  src: url('/fonts/CrownAvenue-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geraldine';
+  src: url('/fonts/GERALDINE PERSONAL USE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GreatVibes';
+  src: url('/fonts/GreatVibes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MadisonSauvage';
+  src: url('/fonts/Madison Sauvage Script.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OrangeAvenue';
+  src: url('/fonts/OrangeAvenueDEMO-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OrangeAvenueOutline';
+  src: url('/fonts/OrangeAvenueOutlineDEMO-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PerfectoCalligraphy';
+  src: url('/fonts/PerfectoCalligraphy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PinyonScript';
+  src: url('/fonts/PinyonScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Priestacy';
+  src: url('/fonts/Priestacy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zaslia';
+  src: url('/fonts/Zaslia.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
