@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
 
             {/* Hero Section / Save the Date */}
             <div className="py-20 px-4 text-center border-b border-neutral-900">
-                <div className="max-w-4xl mx-auto space-y-6">
+                <div className="hero-section max-w-4xl mx-auto space-y-6">
                     <h1 className="text-5xl md:text-7xl font-brand-hero text-white">
                         Wilson-Walleser <span className="font-brand-sub text-gold-500 italic block mt-2">Guest Guide</span>
                     </h1>
@@ -55,7 +55,7 @@ const HomePage: React.FC = () => {
                         <p className="text-white mb-6 leading-relaxed font-light text-lg font-sans">
                             Save the date and join us as we celebrate our wedding at the historic Hatchery Hotel in La Crosse, WI, June 27, 2026.
                         </p>
-                        <p className="text-gold-500 text-3xl font-brand-sub italic transform -rotate-2">
+                        <p className="text-gold-500 text-3xl font-brand-sub italic">
                             - Mitch, Katelyn, & Bobby
                         </p>
 
