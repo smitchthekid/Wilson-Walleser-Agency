@@ -55,22 +55,20 @@ const themes = {
 };
 
 const StyleConfigurator: React.FC = () => {
-    // Ensure this component DOES NOT render in production
-    if (!import.meta.env.DEV) {
-        return null;
-    }
+    // Early return removed to ensure hooks run in production
+
 
     const [isOpen, setIsOpen] = useState(false);
     const [activeTheme, setActiveTheme] = useState('pearl_single');
     const [customColors, setCustomColors] = useState(themes.pearl_single.colors);
 
     // Granular Font State
-    const [brandLogoFont, setBrandLogoFont] = useState(localFonts.find(f => f.name === "Great Vibes")?.value || localFonts[0].value);
-    const [brandTaglineFont, setBrandTaglineFont] = useState(localFonts.find(f => f.name === "Orange Avenue")?.value || googleFonts[1].value);
+    const [brandLogoFont, setBrandLogoFont] = useState(googleFonts.find(f => f.name === "Playfair Display")?.value || googleFonts[1].value);
+    const [brandTaglineFont, setBrandTaglineFont] = useState(localFonts.find(f => f.name === "Crown Avenue")?.value || localFonts[0].value);
     const [brandHeroFont, setBrandHeroFont] = useState(localFonts.find(f => f.name === "Crown Avenue")?.value || localFonts[0].value);
     const [brandSubFont, setBrandSubFont] = useState(localFonts.find(f => f.name === "Great Vibes")?.value || localFonts[0].value);
     const [headingFont, setHeadingFont] = useState(localFonts.find(f => f.name === "Orange Avenue")?.value || googleFonts[1].value);
-    const [bodyFont, setBodyFont] = useState(googleFonts.find(f => f.name === "Inter")?.value || googleFonts[2].value);
+    const [bodyFont, setBodyFont] = useState(localFonts.find(f => f.name === "Bidenatrial")?.value || googleFonts[2].value);
 
     // Filtered lists for UI
     const serifFonts = allFonts.filter(f => f.value.includes('serif') || f.value.includes('cursive'));
@@ -80,40 +78,41 @@ const StyleConfigurator: React.FC = () => {
     const [baseTextColor, setBaseTextColor] = useState('#e5e5e5'); // neutral-200 approx
 
     useEffect(() => {
-        // Load saved settings
-        const savedTheme = localStorage.getItem('activeTheme');
-        const savedColors = localStorage.getItem('customColors');
-        const savedTextColor = localStorage.getItem('baseTextColor');
+        // Load saved settings (DEV ONLY - Enforce defaults in production)
+        if (import.meta.env.DEV) {
+            const savedTheme = localStorage.getItem('activeTheme');
+            const savedColors = localStorage.getItem('customColors');
+            const savedTextColor = localStorage.getItem('baseTextColor');
 
-        const savedBrandLogo = localStorage.getItem('brandLogoFont');
-        const savedBrandTagline = localStorage.getItem('brandTaglineFont');
-        const savedBrandHero = localStorage.getItem('brandHeroFont');
-        const savedBrandSub = localStorage.getItem('brandSubFont');
-        const savedHeading = localStorage.getItem('headingFont');
-        const savedBody = localStorage.getItem('bodyFont');
+            const savedBrandLogo = localStorage.getItem('brandLogoFont');
+            const savedBrandTagline = localStorage.getItem('brandTaglineFont');
+            const savedBrandHero = localStorage.getItem('brandHeroFont');
+            const savedBrandSub = localStorage.getItem('brandSubFont');
+            const savedHeading = localStorage.getItem('headingFont');
+            const savedBody = localStorage.getItem('bodyFont');
 
-        if (savedTheme && themes[savedTheme as keyof typeof themes]) {
-            setActiveTheme(savedTheme);
-            setCustomColors(themes[savedTheme as keyof typeof themes].colors);
-        }
-
-        if (savedColors) {
-            try {
-                setCustomColors(JSON.parse(savedColors));
-                if (savedTheme === 'custom') setActiveTheme('custom');
-            } catch (e) {
-                console.error("Failed to parse saved colors", e);
+            if (savedTheme && themes[savedTheme as keyof typeof themes]) {
+                setActiveTheme(savedTheme);
+                setCustomColors(themes[savedTheme as keyof typeof themes].colors);
             }
+
+            if (savedColors) {
+                try {
+                    setCustomColors(JSON.parse(savedColors));
+                    if (savedTheme === 'custom') setActiveTheme('custom');
+                } catch (e) {
+                    console.error("Failed to parse saved colors", e);
+                }
+            }
+
+            if (savedTextColor) setBaseTextColor(savedTextColor);
+            if (savedBrandLogo) setBrandLogoFont(savedBrandLogo);
+            if (savedBrandTagline) setBrandTaglineFont(savedBrandTagline);
+            if (savedBrandHero) setBrandHeroFont(savedBrandHero);
+            if (savedBrandSub) setBrandSubFont(savedBrandSub);
+            if (savedHeading) setHeadingFont(savedHeading);
+            if (savedBody) setBodyFont(savedBody);
         }
-
-        if (savedTextColor) setBaseTextColor(savedTextColor);
-        if (savedBrandLogo) setBrandLogoFont(savedBrandLogo);
-        if (savedBrandTagline) setBrandTaglineFont(savedBrandTagline);
-        if (savedBrandHero) setBrandHeroFont(savedBrandHero);
-        if (savedBrandSub) setBrandSubFont(savedBrandSub);
-        if (savedHeading) setHeadingFont(savedHeading);
-        if (savedBody) setBodyFont(savedBody);
-
     }, []);
 
     // Apply Styles Effect
@@ -242,6 +241,10 @@ const StyleConfigurator: React.FC = () => {
         setBaseTextColor(value);
         localStorage.setItem('baseTextColor', value);
     };
+
+    if (!import.meta.env.DEV) {
+        return null;
+    }
 
     if (!isOpen) {
         return (
