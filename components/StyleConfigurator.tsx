@@ -30,94 +30,28 @@ const localFonts = [
 const allFonts = [...googleFonts, ...localFonts];
 
 const themes = {
-    burnished: {
-        name: "Burnished Gold",
-        colors: {
-            500: '#C5A059',
-            600: '#A68442',
-            900: '#453518',
-        }
-    },
-    pearl: {
-        name: "Creamy Pearl",
-        colors: {
-            500: '#E8DCCA',
-            600: '#C9B8A0',
-            900: '#594F3F',
-        }
-    },
-    champagne: {
-        name: "Champagne Shimmer",
-        colors: {
-            500: '#F5E0B6',
-            600: '#D4C6A8',
-            900: '#5C5346',
-        }
-    },
-    sand: {
-        name: "Soft Sand",
-        colors: {
-            500: '#C6A87C',
-            600: '#A68A5C',
-            900: '#3D3321',
-        }
-    },
-    honey: {
-        name: "Honey Gold",
-        colors: {
-            500: '#E1B155',
-            600: '#BF9038',
-            900: '#5C4215',
-        }
-    },
-    rosegold: {
-        name: "Rose Gold",
-        colors: {
-            500: '#E6BEAC',
-            600: '#CC9D8A',
-            900: '#694132',
-        }
-    },
-    platinum: {
-        name: "Platinum",
-        colors: {
-            500: '#C5C6C7',
-            600: '#A3A4A6',
-            900: '#404142',
-        }
-    },
-    bronze: {
-        name: "Antique Bronze",
-        colors: {
-            500: '#B09B74',
-            600: '#8F7C56',
-            900: '#3E3625',
-        }
-    },
-    blush: {
-        name: "Blush Champagne",
-        colors: {
-            500: '#EDCFA9',
-            600: '#D0B199',
-            900: '#624A3C',
-        }
-    },
-    sterling: {
-        name: "Sterling Rose",
-        colors: {
-            500: '#D5C2BA',
-            600: '#B7A098',
-            900: '#54413A',
-        }
-    },
-    whitegold: {
-        name: "Pale White Gold",
-        colors: {
-            500: '#D3BB8E',
-            600: '#B19A6F',
-            900: '#4E412B',
-        }
-    }
+    burnished: { name: "Burnished Gold", colors: { 500: '#C5A059', 600: '#A68442', 900: '#453518' } },
+    burnished_single: { name: "Burnished Gold (Single)", colors: { 500: '#C5A059', 600: '#A68442', 900: '#453518' } },
+    pearl: { name: "Creamy Pearl", colors: { 500: '#E8DCCA', 600: '#C9B8A0', 900: '#594F3F' } },
+    pearl_single: { name: "Creamy Pearl (Single)", colors: { 500: '#E8DCCA', 600: '#C9B8A0', 900: '#594F3F' } },
+    champagne: { name: "Champagne Shimmer", colors: { 500: '#F5E0B6', 600: '#D4C6A8', 900: '#5C5346' } },
+    champagne_single: { name: "Champagne Shimmer (Single)", colors: { 500: '#F5E0B6', 600: '#D4C6A8', 900: '#5C5346' } },
+    sand: { name: "Soft Sand", colors: { 500: '#C6A87C', 600: '#A68A5C', 900: '#3D3321' } },
+    sand_single: { name: "Soft Sand (Single)", colors: { 500: '#C6A87C', 600: '#A68A5C', 900: '#3D3321' } },
+    honey: { name: "Honey Gold", colors: { 500: '#E1B155', 600: '#BF9038', 900: '#5C4215' } },
+    honey_single: { name: "Honey Gold (Single)", colors: { 500: '#E1B155', 600: '#BF9038', 900: '#5C4215' } },
+    rosegold: { name: "Rose Gold", colors: { 500: '#E6BEAC', 600: '#CC9D8A', 900: '#694132' } },
+    rosegold_single: { name: "Rose Gold (Single)", colors: { 500: '#E6BEAC', 600: '#CC9D8A', 900: '#694132' } },
+    platinum: { name: "Platinum", colors: { 500: '#C5C6C7', 600: '#A3A4A6', 900: '#404142' } },
+    platinum_single: { name: "Platinum (Single)", colors: { 500: '#C5C6C7', 600: '#A3A4A6', 900: '#404142' } },
+    bronze: { name: "Antique Bronze", colors: { 500: '#B09B74', 600: '#8F7C56', 900: '#3E3625' } },
+    bronze_single: { name: "Antique Bronze (Single)", colors: { 500: '#B09B74', 600: '#8F7C56', 900: '#3E3625' } },
+    blush: { name: "Blush Champagne", colors: { 500: '#EDCFA9', 600: '#D0B199', 900: '#624A3C' } },
+    blush_single: { name: "Blush Champagne (Single)", colors: { 500: '#EDCFA9', 600: '#D0B199', 900: '#624A3C' } },
+    sterling: { name: "Sterling Rose", colors: { 500: '#D5C2BA', 600: '#B7A098', 900: '#54413A' } },
+    sterling_single: { name: "Sterling Rose (Single)", colors: { 500: '#D5C2BA', 600: '#B7A098', 900: '#54413A' } },
+    whitegold: { name: "Pale White Gold", colors: { 500: '#D3BB8E', 600: '#B19A6F', 900: '#4E412B' } },
+    whitegold_single: { name: "Pale White Gold (Single)", colors: { 500: '#D3BB8E', 600: '#B19A6F', 900: '#4E412B' } }
 };
 
 const StyleConfigurator: React.FC = () => {
@@ -127,8 +61,8 @@ const StyleConfigurator: React.FC = () => {
     }
 
     const [isOpen, setIsOpen] = useState(false);
-    const [activeTheme, setActiveTheme] = useState('platinum');
-    const [customColors, setCustomColors] = useState(themes.platinum.colors);
+    const [activeTheme, setActiveTheme] = useState('pearl_single');
+    const [customColors, setCustomColors] = useState(themes.pearl_single.colors);
 
     // Granular Font State
     const [brandLogoFont, setBrandLogoFont] = useState(localFonts.find(f => f.name === "Great Vibes")?.value || localFonts[0].value);
@@ -245,9 +179,25 @@ const StyleConfigurator: React.FC = () => {
             
             /* Base Text Color Override */
             body, .text-neutral-200 { color: ${baseTextColor} !important; }
+
+            /* Single Color Theme Overrides */
+            ${activeTheme.endsWith('_single') ? `
+                /* Global Headings & Gold Text */
+                h1, h2, h3, h4, h5, h6, 
+                h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+                .text-gold-500, .text-gold-600 {
+                    color: var(--color-gold-500) !important;
+                    fill: var(--color-gold-500) !important;
+                }
+                
+                /* Force Hero Section to be Single Color */
+                .hero-section, .hero-section * {
+                    color: var(--color-gold-500) !important;
+                }
+            ` : ''}
         `;
 
-    }, [customColors, brandLogoFont, brandHeroFont, brandSubFont, headingFont, bodyFont, baseTextColor]);
+    }, [customColors, brandLogoFont, brandHeroFont, brandSubFont, headingFont, bodyFont, baseTextColor, activeTheme]);
 
     const handleThemeChange = (key: string) => {
         setActiveTheme(key);
