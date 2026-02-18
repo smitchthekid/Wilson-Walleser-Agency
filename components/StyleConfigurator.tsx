@@ -67,8 +67,8 @@ const StyleConfigurator: React.FC = () => {
     const [brandTaglineFont, setBrandTaglineFont] = useState(localFonts.find(f => f.name === "Crown Avenue")?.value || localFonts[0].value);
     const [brandHeroFont, setBrandHeroFont] = useState(localFonts.find(f => f.name === "Crown Avenue")?.value || localFonts[0].value);
     const [brandSubFont, setBrandSubFont] = useState(localFonts.find(f => f.name === "Great Vibes")?.value || localFonts[0].value);
-    const [headingFont, setHeadingFont] = useState(localFonts.find(f => f.name === "Orange Avenue")?.value || googleFonts[1].value);
-    const [bodyFont, setBodyFont] = useState(localFonts.find(f => f.name === "Bidenatrial")?.value || googleFonts[2].value);
+    const [headingFont, setHeadingFont] = useState(googleFonts.find(f => f.name === "Playfair Display")?.value || googleFonts[1].value);
+    const [bodyFont, setBodyFont] = useState(googleFonts.find(f => f.name === "Inter")?.value || googleFonts[2].value);
 
     // Filtered lists for UI
     const serifFonts = allFonts.filter(f => f.value.includes('serif') || f.value.includes('cursive'));
@@ -168,6 +168,7 @@ const StyleConfigurator: React.FC = () => {
             .font-brand-tagline { font-family: var(--font-brand-tagline) !important; }
             .font-brand-hero { font-family: var(--font-brand-hero) !important; }
             .font-brand-sub { font-family: var(--font-brand-sub) !important; }
+            .font-brand { font-family: var(--font-brand-tagline) !important; }
             
             .font-display { font-family: var(--font-display) !important; }
             .font-serif { font-family: var(--font-serif) !important; }
