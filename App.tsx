@@ -8,6 +8,8 @@ import EateriesPage from './pages/EateriesPage';
 import FlightsTransportPage from './pages/FlightsTransportPage';
 import StyleConfigurator from './components/StyleConfigurator';
 
+import { ASSETS } from './assets';
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   React.useEffect(() => {
@@ -21,10 +23,12 @@ const Header = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center h-20">
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gold-600 text-black shadow-lg shadow-gold-900/20 group-hover:bg-gold-500 transition-colors">
-            <span className="font-brand-logo text-xl pt-0.5 pl-0.5">W/W</span>
-          </div>
-          <span className="text-xl font-brand-tagline font-bold text-gold-500 tracking-wide">Wilson - Walleser Guest Guide</span>
+          <img
+            src={ASSETS.LOGO}
+            alt="Wilson-Walleser Logo"
+            className="w-12 h-12 rounded-full object-cover shadow-lg shadow-gold-900/20 group-hover:opacity-90 transition-opacity bg-gold-600 p-0.5"
+          />
+          <span className="text-2xl font-brand-tagline font-bold text-gold-500 tracking-wide">Wilson - Walleser Guest Guide</span>
         </Link>
         <nav className="hidden md:flex gap-6">
           <Link to="/airbnbs" className="text-sm font-medium text-neutral-300 hover:text-gold-500 transition-colors">Airbnbs</Link>

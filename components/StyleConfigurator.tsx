@@ -64,7 +64,7 @@ const StyleConfigurator: React.FC = () => {
 
     // Granular Font State
     const [brandLogoFont, setBrandLogoFont] = useState(googleFonts.find(f => f.name === "Playfair Display")?.value || googleFonts[1].value);
-    const [brandTaglineFont, setBrandTaglineFont] = useState(localFonts.find(f => f.name === "Crown Avenue")?.value || localFonts[0].value);
+    const [brandTaglineFont, setBrandTaglineFont] = useState(googleFonts.find(f => f.name === "Cinzel")?.value || googleFonts[0].value);
     const [brandHeroFont, setBrandHeroFont] = useState(localFonts.find(f => f.name === "Crown Avenue")?.value || localFonts[0].value);
     const [brandSubFont, setBrandSubFont] = useState(localFonts.find(f => f.name === "Great Vibes")?.value || localFonts[0].value);
     const [headingFont, setHeadingFont] = useState(googleFonts.find(f => f.name === "Playfair Display")?.value || googleFonts[1].value);
