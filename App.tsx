@@ -26,15 +26,15 @@ const Header = () => (
           <img
             src={ASSETS.LOGO}
             alt="Wilson-Walleser Logo"
-            className="w-12 h-12 rounded-full object-cover shadow-lg shadow-gold-900/20 group-hover:opacity-90 transition-opacity bg-gold-600 p-0.5"
+            className="w-14 h-14 rounded-full object-cover group-hover:opacity-90 transition-opacity"
           />
-          <span className="text-2xl font-brand-tagline font-bold text-gold-500 tracking-wide">Wilson - Walleser Guest Guide</span>
+          <span className="text-lg font-brand-tagline text-white tracking-wide">Wilson-Walleser Guest Guide</span>
         </Link>
         <nav className="hidden md:flex gap-6">
-          <Link to="/airbnbs" className="text-sm font-medium text-neutral-300 hover:text-gold-500 transition-colors">Airbnbs</Link>
-          <Link to="/hotels" className="text-sm font-medium text-neutral-300 hover:text-gold-500 transition-colors">Hotels</Link>
-          <Link to="/eateries" className="text-sm font-medium text-neutral-300 hover:text-gold-500 transition-colors">Eateries</Link>
-          <Link to="/flights-transport" className="text-sm font-medium text-neutral-300 hover:text-gold-500 transition-colors">Flights & Transport</Link>
+          <Link to="/airbnbs" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">Airbnbs</Link>
+          <Link to="/hotels" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">Hotels</Link>
+          <Link to="/eateries" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">Eateries</Link>
+          <Link to="/flights-transport" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">Flights & Transport</Link>
         </nav>
       </div>
     </div>

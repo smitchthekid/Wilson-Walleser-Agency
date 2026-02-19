@@ -14,7 +14,7 @@ const HotelsPage: React.FC = () => {
                 </div>
 
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
+                    <h1 className="text-4xl md:text-5xl font-brand-hero text-white mb-6">
                         Recommended <span className="text-gold-600 italic">Hotels</span>
                     </h1>
                     <p className="max-w-2xl mx-auto text-neutral-400 text-lg leading-relaxed">

@@ -79,17 +79,17 @@ const HomePage: React.FC = () => {
                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent opacity-90 transition-opacity" />
                                 <div className="absolute bottom-4 left-0 right-0">
-                                    <h3 className="text-2xl font-serif text-white drop-shadow-md">
-                                        {card.titlePart1} <span className="text-gold-500 italic">{card.titlePart2}</span>
+                                    <h3 className="text-2xl font-brand-hero text-white drop-shadow-md">
+                                        {card.titlePart1} {card.titlePart2}
                                     </h3>
                                 </div>
                             </div>
 
                             <div className="p-6 flex flex-col flex-grow items-center">
-                                <p className="text-neutral-400 group-hover:text-neutral-300 transition-colors text-base font-light leading-relaxed mb-6 font-sans">
+                                <p className="text-neutral-200 group-hover:text-white transition-colors text-base font-light leading-relaxed mb-6 font-sans">
                                     {card.description}
                                 </p>
-                                <div className="mt-6 py-3 px-8 bg-gold-600 text-black rounded font-bold uppercase tracking-widest text-sm hover:bg-gold-900 hover:text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 w-full">
+                                <div className="mt-6 py-3 px-8 bg-gold-600 text-black rounded font-ui font-bold text-base hover:bg-gold-900 hover:text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 w-full">
                                     {card.buttonText}
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ const HomePage: React.FC = () => {
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent opacity-90 transition-opacity" />
                             <div className="absolute bottom-4 left-0 right-0">
-                                <h3 className="text-2xl font-serif text-white drop-shadow-md">Hatchery <span className="text-gold-500 italic">Riverside</span></h3>
+                                <h3 className="text-2xl font-brand-hero text-white drop-shadow-md">Hatchery Riverside</h3>
                             </div>
                         </div>
                         <div className="p-6 flex flex-col flex-grow items-center">
@@ -129,7 +129,7 @@ const HomePage: React.FC = () => {
                                 href="https://www.hatcheryriverside.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block w-full py-3 px-6 bg-gold-600 text-black rounded font-bold uppercase tracking-widest transition-all duration-300 hover:bg-gold-900 hover:text-white hover:shadow-xl hover:-translate-y-0.5 mt-6"
+                                className="block w-full py-3 px-6 bg-gold-600 text-black rounded font-ui font-bold text-base transition-all duration-300 hover:bg-gold-900 hover:text-white hover:shadow-xl hover:-translate-y-0.5 mt-6"
                             >
                                 Visit Venue Website
                             </a>
@@ -147,7 +147,7 @@ const HomePage: React.FC = () => {
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent opacity-90 transition-opacity" />
                             <div className="absolute bottom-4 left-0 right-0">
-                                <h3 className="text-2xl font-serif text-white drop-shadow-md">Official <span className="text-gold-500 italic">Wedding Site</span></h3>
+                                <h3 className="text-2xl font-brand-hero text-white drop-shadow-md">Official Wedding Site</h3>
                             </div>
                         </div>
                         <div className="p-6 flex flex-col flex-grow items-center">
@@ -155,7 +155,7 @@ const HomePage: React.FC = () => {
                                 You’re currently viewing the Wilson–Walleser travel guide. Be on the lookout for RSVPs by mail or text.
                             </p>
                             <div className="mt-6 pt-2 w-full">
-                                <span className="block w-full py-3 px-6 bg-neutral-800 text-neutral-500 rounded font-medium border border-neutral-700/50 uppercase text-xs tracking-widest cursor-not-allowed">
+                                <span className="block w-full py-3 px-6 bg-neutral-800 text-neutral-500 rounded font-ui font-bold border border-neutral-700/50 text-sm cursor-not-allowed">
                                     Official Website Coming Soon
                                 </span>
                             </div>
@@ -173,7 +173,7 @@ const HomePage: React.FC = () => {
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent opacity-90 transition-opacity" />
                             <div className="absolute bottom-4 left-0 right-0">
-                                <h3 className="text-2xl font-serif text-white drop-shadow-md">Update <span className="text-gold-500 italic">Details</span></h3>
+                                <h3 className="text-2xl font-brand-hero text-white drop-shadow-md">Update Details</h3>
                             </div>
                         </div>
                         <div className="p-6 flex flex-col flex-grow items-center">
@@ -184,7 +184,7 @@ const HomePage: React.FC = () => {
                                 href="https://www.zola.com/addr/vvMMmNKlQ"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block w-full py-3 px-6 bg-gold-600 text-black rounded font-bold uppercase tracking-widest transition-all duration-300 hover:bg-gold-900 hover:text-white hover:shadow-xl hover:-translate-y-0.5 mt-6"
+                                className="block w-full py-3 px-6 bg-gold-600 text-black rounded font-ui font-bold text-base transition-all duration-300 hover:bg-gold-900 hover:text-white hover:shadow-xl hover:-translate-y-0.5 mt-6"
                             >
                                 Update Guest Details
                             </a>

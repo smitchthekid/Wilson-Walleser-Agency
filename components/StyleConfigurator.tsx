@@ -15,14 +15,14 @@ const googleFonts = [
 // Local Fonts Data (Must allow specific selection)
 const localFonts = [
     { name: "Bidenatrial", value: 'Bidenatrial, serif' },
-    { name: "Crown Avenue", value: 'CrownAvenue, serif' },
+    { name: "Crown Avenue", value: '"Crown Avenue", serif' },
     { name: "Geraldine", value: 'Geraldine, cursive' },
-    { name: "Great Vibes", value: 'GreatVibes, cursive' },
-    { name: "Madison Sauvage", value: 'MadisonSauvage, cursive' },
-    { name: "Orange Avenue", value: 'OrangeAvenue, serif' },
-    { name: "Orange Avenue Outline", value: 'OrangeAvenueOutline, serif' },
-    { name: "Perfecto Calligraphy", value: 'PerfectoCalligraphy, cursive' },
-    { name: "Pinyon Script", value: 'PinyonScript, cursive' },
+    { name: "Great Vibes", value: '"Great Vibes", cursive' },
+    { name: "Madison Sauvage", value: '"Madison Sauvage", cursive' },
+    { name: "Orange Avenue", value: '"Orange Avenue", serif' },
+    { name: "Orange Avenue Outline", value: '"Orange Avenue Outline", serif' },
+    { name: "Perfecto Calligraphy", value: '"Perfecto Calligraphy", cursive' },
+    { name: "Pinyon Script", value: '"Pinyon Script", cursive' },
     { name: "Priestacy", value: 'Priestacy, serif' },
     { name: "Zaslia", value: 'Zaslia, serif' },
 ];
@@ -51,7 +51,8 @@ const themes = {
     sterling: { name: "Sterling Rose", colors: { 500: '#D5C2BA', 600: '#B7A098', 900: '#54413A' } },
     sterling_single: { name: "Sterling Rose (Single)", colors: { 500: '#D5C2BA', 600: '#B7A098', 900: '#54413A' } },
     whitegold: { name: "Pale White Gold", colors: { 500: '#D3BB8E', 600: '#B19A6F', 900: '#4E412B' } },
-    whitegold_single: { name: "Pale White Gold (Single)", colors: { 500: '#D3BB8E', 600: '#B19A6F', 900: '#4E412B' } }
+    whitegold_single: { name: "Pale White Gold (Single)", colors: { 500: '#D3BB8E', 600: '#B19A6F', 900: '#4E412B' } },
+    production_gold: { name: "Production Gold", colors: { 500: '#D4AF37', 600: '#AA8C2C', 900: '#42360E' } }
 };
 
 const StyleConfigurator: React.FC = () => {
@@ -59,16 +60,18 @@ const StyleConfigurator: React.FC = () => {
 
 
     const [isOpen, setIsOpen] = useState(false);
-    const [activeTheme, setActiveTheme] = useState('pearl_single');
-    const [customColors, setCustomColors] = useState(themes.pearl_single.colors);
+    // Default to Sterling Rose (Regular) - Production Setting
+    const defaultColors = { 500: '#D5C2BA', 600: '#B7A098', 900: '#54413A' };
+    const [activeTheme, setActiveTheme] = useState('sterling');
+    const [customColors, setCustomColors] = useState(defaultColors);
 
     // Granular Font State
     const [brandLogoFont, setBrandLogoFont] = useState(googleFonts.find(f => f.name === "Playfair Display")?.value || googleFonts[1].value);
-    const [brandTaglineFont, setBrandTaglineFont] = useState(googleFonts.find(f => f.name === "Cinzel")?.value || googleFonts[0].value);
+    const [brandTaglineFont, setBrandTaglineFont] = useState(localFonts.find(f => f.name === "Crown Avenue")?.value || localFonts[0].value);
     const [brandHeroFont, setBrandHeroFont] = useState(localFonts.find(f => f.name === "Crown Avenue")?.value || localFonts[0].value);
     const [brandSubFont, setBrandSubFont] = useState(localFonts.find(f => f.name === "Great Vibes")?.value || localFonts[0].value);
     const [headingFont, setHeadingFont] = useState(googleFonts.find(f => f.name === "Playfair Display")?.value || googleFonts[1].value);
-    const [bodyFont, setBodyFont] = useState(googleFonts.find(f => f.name === "Inter")?.value || googleFonts[2].value);
+    const [bodyFont, setBodyFont] = useState(googleFonts.find(f => f.name === "Playfair Display")?.value || googleFonts[1].value);
 
     // Filtered lists for UI
     const serifFonts = allFonts.filter(f => f.value.includes('serif') || f.value.includes('cursive'));
@@ -79,6 +82,8 @@ const StyleConfigurator: React.FC = () => {
 
     useEffect(() => {
         // Load saved settings (DEV ONLY - Enforce defaults in production)
+        // Load saved settings - DISABLED to enforce new defaults
+        /* 
         if (import.meta.env.DEV) {
             const savedTheme = localStorage.getItem('activeTheme');
             const savedColors = localStorage.getItem('customColors');
@@ -113,6 +118,7 @@ const StyleConfigurator: React.FC = () => {
             if (savedHeading) setHeadingFont(savedHeading);
             if (savedBody) setBodyFont(savedBody);
         }
+        */
     }, []);
 
     // Apply Styles Effect

@@ -14,7 +14,7 @@ const EateriesPage: React.FC = () => {
                 </div>
 
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
+                    <h1 className="text-4xl md:text-5xl font-brand-hero text-white mb-6">
                         Local <span className="text-gold-600 italic">Eateries</span>
                     </h1>
                     <p className="max-w-2xl mx-auto text-neutral-400 text-lg leading-relaxed">
