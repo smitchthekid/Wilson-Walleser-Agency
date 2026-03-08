@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Listing } from '../types';
 
 interface ListingCardProps {
@@ -8,8 +7,8 @@ interface ListingCardProps {
 
 const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
   return (
-    <Link
-      to={`/listing/${listing.id}`}
+    <a
+      href={listing.url} target="_blank" rel="noopener noreferrer"
       className="group block bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-gold-600/50 transition-all duration-300 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] hover:-translate-y-1"
     >
       <div className="relative h-64 overflow-hidden">
@@ -19,11 +18,7 @@ const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-        <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
-          <span className="bg-black/70 backdrop-blur-sm text-gold-500 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider border border-gold-900/30">
-            ${listing.price_per_night} / night
-          </span>
-        </div>
+
       </div>
 
       <div className="p-6">
@@ -54,7 +49,7 @@ const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
           </span>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
 

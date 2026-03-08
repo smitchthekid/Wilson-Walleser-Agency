@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import ListingsPage from './pages/ListingsPage';
-import DetailPage from './pages/DetailPage';
 import HomePage from './pages/HomePage';
 import HotelsPage from './pages/HotelsPage';
 import EateriesPage from './pages/EateriesPage';
@@ -60,7 +59,6 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/airbnbs" element={<ListingsPage />} />
-            <Route path="/listing/:id" element={<DetailPage />} />
             <Route path="/hotels" element={<HotelsPage />} />
             <Route path="/eateries" element={<EateriesPage />} />
             <Route path="/flights-transport" element={<FlightsTransportPage />} />

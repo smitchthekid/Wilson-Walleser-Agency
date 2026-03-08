@@ -1,3 +1,3 @@
 export const ASSETS = {
-    LOGO: '/images/ww-logo-est-2026.png',
+    LOGO: '/images/wilson-walleser-logo-v2.jpg',
 };
