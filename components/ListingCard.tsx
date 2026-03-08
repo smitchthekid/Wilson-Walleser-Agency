@@ -8,17 +8,23 @@ interface ListingCardProps {
 const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
   return (
     <a
-      href={listing.url} target="_blank" rel="noopener noreferrer"
-      className="group block bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-gold-600/50 transition-all duration-300 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] hover:-translate-y-1"
+      href={listing.is_booked ? "#" : listing.url} target={listing.is_booked ? "_self" : "_blank"} rel="noopener noreferrer"
+      className={`group block bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-gold-600/50 transition-all duration-300 ${listing.is_booked ? 'cursor-not-allowed opacity-80' : 'hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] hover:-translate-y-1'}`}
+      onClick={(e) => listing.is_booked && e.preventDefault()}
     >
       <div className="relative h-64 overflow-hidden">
         <img
           src={listing.images[0]}
           alt={listing.name}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className={`w-full h-full object-cover transition-transform duration-700 ${listing.is_booked ? 'opacity-50 grayscale' : 'group-hover:scale-110'}`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
+        {listing.is_booked && (
+          <div className="absolute top-4 right-4 bg-red-900/80 backdrop-blur-md text-red-100 px-4 py-1.5 rounded text-sm font-bold uppercase tracking-wider border border-red-500/30">
+            Booked / Unavailable
+          </div>
+        )}
       </div>
 
       <div className="p-6">
@@ -49,7 +55,7 @@ const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
           </span>
         </div>
       </div>
-    </a>
+    </a >
   );
 };
 

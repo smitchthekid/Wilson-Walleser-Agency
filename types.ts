@@ -28,6 +28,7 @@ export interface Listing {
   images: string[];
   price_per_night: number;
   distance_from_venue: Distance;
+  is_booked?: boolean;
 }
 
 export interface Social {

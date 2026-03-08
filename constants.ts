@@ -17,7 +17,8 @@ export const AIRBNB_LISTINGS: Listing[] = [
       "https://a0.muscache.com/im/pictures/hosting/Hosting-1188537173224745771/original/80d47bdd-878d-4cd9-87fe-a4c5f12cccb3.jpeg?aki_policy=xx_large"
     ],
     price_per_night: 225,
-    distance_from_venue: { miles: 0.5, drive_minutes_range: [2, 5], method: "approx" }
+    distance_from_venue: { miles: 0.5, drive_minutes_range: [2, 5], method: "approx" },
+    is_booked: true
   },
   {
     id: "airbnb_53566277",
@@ -38,7 +39,8 @@ export const AIRBNB_LISTINGS: Listing[] = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-53566277/original/0a2b8302-385b-47c0-9a82-88b961593467.jpeg"
     ],
     price_per_night: 350,
-    distance_from_venue: { miles: 1.2, drive_minutes_range: [4, 7], method: "approx" }
+    distance_from_venue: { miles: 1.2, drive_minutes_range: [4, 7], method: "approx" },
+    is_booked: true
   },
   {
     id: "airbnb_37877767",
@@ -59,7 +61,8 @@ export const AIRBNB_LISTINGS: Listing[] = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-37877767/original/a7c3c240-6b95-4a98-bdba-b28ee43928de.jpeg?aki_policy=xx_large"
     ],
     price_per_night: 275,
-    distance_from_venue: { miles: 1.5, drive_minutes_range: [5, 8], method: "approx" }
+    distance_from_venue: { miles: 1.5, drive_minutes_range: [5, 8], method: "approx" },
+    is_booked: true
   },
 
   {
@@ -143,7 +146,52 @@ export const AIRBNB_LISTINGS: Listing[] = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-47336433/original/aaeae8b7-11c1-4a99-a248-e7ff020d10f6.jpeg?aki_policy=xx_large"
     ],
     price_per_night: 450,
-    distance_from_venue: { miles: 0.8, drive_minutes_range: [3, 5], method: "approx" }
+    distance_from_venue: { miles: 0.8, drive_minutes_range: [3, 5], method: "approx" },
+    is_booked: true
+  },
+  {
+    id: "airbnb_51836805",
+    name: "Cozy Hideaway",
+    type: "airbnb",
+    url: "https://www.airbnb.com/rooms/51836805",
+    address: { city: "La Crosse", state: "WI", country: "US" },
+    overview: "Cozy Hideaway features fire places, Jacuzzi & King Beds. A perfect retreat for relaxation and comfort in La Crosse.",
+    bedrooms: 3,
+    beds: 3,
+    bathrooms: 2.5,
+    max_guests: 6,
+    amenities: ["Fireplace", "Jacuzzi", "King Beds", "Wifi", "Kitchen"],
+    images: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-51836805/original/96bc14e4-0c76-4432-991f-4ccf981f7384.jpeg?aki_policy=xx_large",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-51836805/original/edff881c-ff46-4342-b734-026467597a47.jpeg?aki_policy=xx_large",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-51836805/original/b5ca4c21-2cfa-4890-8f17-7d3cfca7cce9.jpeg?aki_policy=xx_large",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-51836805/original/e281449b-44f7-4944-b848-b9d00fc45db0.jpeg?aki_policy=xx_large"
+    ],
+    price_per_night: 300,
+    distance_from_venue: { miles: 1.8, drive_minutes_range: [6, 10], method: "approx" },
+    is_booked: true
+  },
+  {
+    id: "airbnb_50008318",
+    name: "Swedish Storybook",
+    type: "airbnb",
+    url: "https://www.airbnb.com/rooms/50008318",
+    address: { city: "La Crosse", state: "WI", country: "US" },
+    overview: "Swedish Storybook home located in bluffs near hiking trails & stream. Experience the charm and nature right at your doorstep.",
+    bedrooms: 5,
+    beds: 7,
+    bathrooms: 3,
+    max_guests: 11,
+    amenities: ["Hiking Trails", "Stream View", "Wifi", "Kitchen", "Large Group Friendly"],
+    images: [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-50008318/original/3cdb05dc-1861-47ef-a6c4-b420e4bc5f19.jpeg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-50008318/original/408a5c24-53a6-4b91-8c99-2f4f73bc3ef4.jpeg?aki_policy=xx_large",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-50008318/original/5c7a2e99-6980-4e23-befe-64c2250fcb91.jpeg?aki_policy=xx_large",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-50008318/original/0dd86051-c783-454a-a47b-00c54ac29d14.jpeg?aki_policy=xx_large"
+    ],
+    price_per_night: 400,
+    distance_from_venue: { miles: 3.5, drive_minutes_range: [10, 15], method: "approx" },
+    is_booked: true
   }
 ];
 
