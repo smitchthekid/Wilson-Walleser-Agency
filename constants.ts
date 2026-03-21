@@ -17,8 +17,7 @@ export const AIRBNB_LISTINGS: Listing[] = [
       "https://a0.muscache.com/im/pictures/hosting/Hosting-1188537173224745771/original/80d47bdd-878d-4cd9-87fe-a4c5f12cccb3.jpeg?aki_policy=xx_large"
     ],
     price_per_night: 225,
-    distance_from_venue: { miles: 0.5, drive_minutes_range: [2, 5], method: "approx" },
-    is_booked: true
+    distance_from_venue: { miles: 0.5, drive_minutes_range: [2, 5], method: "approx" }
   },
   {
     id: "airbnb_53566277",
