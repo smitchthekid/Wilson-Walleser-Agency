@@ -8,9 +8,8 @@ interface ListingCardProps {
 const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
   return (
     <a
-      href={listing.is_booked ? "#" : listing.url} target={listing.is_booked ? "_self" : "_blank"} rel="noopener noreferrer"
-      className={`group block bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-gold-600/50 transition-all duration-300 ${listing.is_booked ? 'cursor-not-allowed opacity-80' : 'hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] hover:-translate-y-1'}`}
-      onClick={(e) => listing.is_booked && e.preventDefault()}
+      href={listing.url} target="_blank" rel="noopener noreferrer"
+      className={`group block bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-gold-600/50 transition-all duration-300 ${listing.is_booked ? 'opacity-80 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]' : 'hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] hover:-translate-y-1'}`}
     >
       <div className="relative h-64 overflow-hidden">
         <img
