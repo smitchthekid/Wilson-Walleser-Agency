@@ -5,9 +5,12 @@ import HomePage from './pages/HomePage';
 import HotelsPage from './pages/HotelsPage';
 import EateriesPage from './pages/EateriesPage';
 import FlightsTransportPage from './pages/FlightsTransportPage';
+import ParkingPage from './pages/ParkingPage';
 import StyleConfigurator from './components/StyleConfigurator';
 
 import { ASSETS } from './assets';
+
+const RSVP_URL = "https://www.zola.com/wedding/mitchellandkatelyn2026/rsvp";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -30,6 +33,9 @@ const Header = () => (
           <span className="text-lg font-brand-tagline text-white tracking-wide">Wilson-Walleser Guest Guide</span>
         </Link>
         <nav className="hidden md:flex gap-6">
+          <Link to="/" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">Home</Link>
+          <a href={RSVP_URL} target="_blank" rel="noopener noreferrer" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">RSVP</a>
+          <Link to="/parking" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">Parking</Link>
           <Link to="/airbnbs" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">Airbnbs</Link>
           <Link to="/hotels" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">Hotels</Link>
           <Link to="/eateries" className="text-lg font-ui font-medium text-white hover:text-gold-500 transition-colors tracking-wide">Eateries</Link>
@@ -61,6 +67,7 @@ export default function App() {
             <Route path="/airbnbs" element={<ListingsPage />} />
             <Route path="/hotels" element={<HotelsPage />} />
             <Route path="/eateries" element={<EateriesPage />} />
+            <Route path="/parking" element={<ParkingPage />} />
             <Route path="/flights-transport" element={<FlightsTransportPage />} />
           </Routes>
         </main>

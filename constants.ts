@@ -66,7 +66,7 @@ export const AIRBNB_LISTINGS: Listing[] = [
 
   {
     id: "airbnb_38241797",
-    name: "Bluff Wildlife & Quiet",
+    name: "House in the Hills",
     type: "airbnb",
     url: "https://www.airbnb.com/rooms/38241797",
     address: { city: "La Crosse", state: "WI", country: "US" },
@@ -83,7 +83,8 @@ export const AIRBNB_LISTINGS: Listing[] = [
       "https://a0.muscache.com/im/pictures/832f9fda-b40e-484e-8233-68ad1bdbdff9.jpg?aki_policy=xx_large"
     ],
     price_per_night: 380,
-    distance_from_venue: { miles: 3.2, drive_minutes_range: [9, 14], method: "approx" }
+    distance_from_venue: { miles: 3.2, drive_minutes_range: [9, 14], method: "approx" },
+    is_booked: true
   },
   {
     id: "airbnb_42610014",
@@ -102,7 +103,8 @@ export const AIRBNB_LISTINGS: Listing[] = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-42610014/original/35cb3cc1-72fa-4199-82dc-8e1440d872f2.jpeg?aki_policy=xx_large"
     ],
     price_per_night: 215,
-    distance_from_venue: { miles: 1.0, drive_minutes_range: [3, 5], method: "approx" }
+    distance_from_venue: { miles: 1.0, drive_minutes_range: [3, 5], method: "approx" },
+    is_booked: true
   },
   {
     id: "airbnb_36882483",
@@ -123,7 +125,8 @@ export const AIRBNB_LISTINGS: Listing[] = [
       "https://a0.muscache.com/im/pictures/a0e133c8-2a3f-4443-af85-88cc126cd977.jpg?aki_policy=xx_large"
     ],
     price_per_night: 265,
-    distance_from_venue: { miles: 1.3, drive_minutes_range: [4, 7], method: "approx" }
+    distance_from_venue: { miles: 1.3, drive_minutes_range: [4, 7], method: "approx" },
+    is_booked: true
   },
   {
     id: "airbnb_47336433",
