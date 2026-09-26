@@ -38,9 +38,10 @@ excerpt: "Optional one-line summary for the directory"
 ---
 ```
 
-The current posts are the 14 published articles from the PleaseCart WordPress
+The posts are the 14 published articles from the PleaseCart WordPress
 import (batch `test-1`, also in the `pleasecart-reboot` repo). They keep their
-old WordPress slugs so old links can be redirected to `/blog/<slug>`.
+old WordPress slugs so old links can be redirected to `/blog/<slug>`. Three off-topic
+posts are set to `status: "draft"` so they stay in the repo but are hidden.
 
 ## Development
 

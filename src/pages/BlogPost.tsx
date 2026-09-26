@@ -8,7 +8,7 @@ import NotFound from './NotFound';
 export default function BlogPost() {
   const { slug = '' } = useParams();
   const post = getPost(slug);
-  usePageTitle(post?.title);
+  usePageTitle(post ? post.title : 'Page not found');
   if (!post) return <NotFound />;
 
   const i = posts.indexOf(post);

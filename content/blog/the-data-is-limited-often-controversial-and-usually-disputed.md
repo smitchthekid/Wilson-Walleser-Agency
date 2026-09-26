@@ -1,7 +1,7 @@
 ---
 title: "Clean energy: Controversial, Contentious, and Disputed"
 slug: "the-data-is-limited-often-controversial-and-usually-disputed"
-status: "publish"
+status: "draft"
 date: "2020-03-22 10:26:13"
 modified: "2020-04-15 22:40:27"
 excerpt: "In 2018, legislation coined the \"Affordable Clean Energy Act\".  The date within demonstrates how data is often polarized, skewed, and misinterpreted."

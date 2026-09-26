@@ -123,7 +123,7 @@ export const services: Service[] = [
     idealFor: ['Businesses with no time to post consistently', 'Brands that sell to consumers', 'Creators and musicians building an audience'],
     relatedPosts: [
       'breaking-through-saturated-markets-and-modeling-data-that-matters',
-      'the-digital-divide-of-country-and-electronic-dance-music',
+      'what-is-content-marketing-how-does-it-outperform-paid-advertising',
     ],
   },
   {

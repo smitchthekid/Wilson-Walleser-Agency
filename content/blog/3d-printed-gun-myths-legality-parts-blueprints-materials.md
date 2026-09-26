@@ -1,7 +1,7 @@
 ---
 title: "3D Printed Gun Myths – Legality, Parts, Blueprints, & Materials"
 slug: "3d-printed-gun-myths-legality-parts-blueprints-materials"
-status: "publish"
+status: "draft"
 date: "2019-12-09 10:19:25"
 modified: "2020-04-05 23:57:14"
 excerpt: ""

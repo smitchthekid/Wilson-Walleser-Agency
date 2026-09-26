@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 export default function ServiceDetail() {
   const { slug = '' } = useParams();
   const service = getService(slug);
-  usePageTitle(service?.title);
+  usePageTitle(service ? service.title : 'Page not found');
   if (!service) return <NotFound />;
 
   const related = service.relatedPosts.map(getPost).filter((p): p is Post => !!p);
