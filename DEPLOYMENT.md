@@ -41,3 +41,30 @@ npx wrangler@latest deploy --dry-run
 
 Manual/static host deployment:
 - Upload the contents of `dist/`, or use the prepared `dist-deploy.zip` archive.
+
+## Railway QA Preview
+A password-protected copy of the site for QA, deployed from `main`.
+Production stays on Cloudflare; Railway runs `server.js`, which Cloudflare never uses.
+
+`railway.json` sets the build (`npm ci && npm run build`), the start command
+(`npm start` → `node server.js`) and the health check (`/healthz`).
+
+What `server.js` does:
+- Asks for a username and password (HTTP Basic Auth) on every page.
+- Tells crawlers to stay out: `X-Robots-Tag: noindex, nofollow` on every response,
+  and `/robots.txt` disallows everything. Neither is added to the Cloudflare build.
+- Sends unknown paths to `index.html` so deep links like `/blog/<slug>` survive a refresh.
+- Leaves `/healthz` and `/robots.txt` open so Railway's health check and crawlers can read them.
+- Refuses to start if the credentials below are not set.
+
+Railway setup:
+1. New Project → Deploy from GitHub repo → this repo, branch `main`.
+2. Service → Variables: set `PREVIEW_USER` and `PREVIEW_PASSWORD`.
+   Keep the password out of the repo; change it here and redeploy to rotate it.
+3. Service → Settings → Networking → Generate Domain, and share that URL with QA.
+
+Test it locally:
+```bash
+npm run build
+PREVIEW_USER=qa PREVIEW_PASSWORD=secret PORT=3000 npm start
+```
