@@ -232,7 +232,6 @@ a {
   color: #fff;
   border-radius: 28px;
   padding: 36px;
-  transform: rotate(1.5deg);
   box-shadow: 0 30px 60px -30px rgba(22, 22, 26, 0.5);
 }
 
@@ -395,8 +394,8 @@ a {
 /* About */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1fr;
+  gap: 48px;
   align-items: start;
 }
 
@@ -406,9 +405,15 @@ a {
   font-size: 1.1rem;
 }
 
+.about-grid > div:first-child {
+  max-width: 720px;
+}
+
 .founders {
   display: grid;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
 }
 
 .founder-card {
@@ -429,7 +434,7 @@ a {
   border-radius: 50%;
   background: var(--accent);
   color: var(--accent-ink);
-  font: 600 1.6rem var(--font-display);
+  font: 600 1.4rem var(--font-display);
 }
 
 .founder-role {
@@ -439,8 +444,12 @@ a {
   margin: 2px 0 10px;
 }
 
-.founder-card p:last-child {
+.founder-bio {
   color: var(--muted);
+}
+
+.founder-bio + .founder-bio {
+  margin-top: 12px;
 }
 
 /* Contact */
@@ -933,15 +942,21 @@ a {
   .values-grid {
     grid-template-columns: 1fr;
   }
-
-  .hero-card {
-    transform: none;
-  }
 }
 
 @media (max-width: 720px) {
   .container {
     padding: 0 16px;
+  }
+
+  .founders {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
   }
 
   .menu-toggle {

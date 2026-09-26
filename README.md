@@ -9,7 +9,6 @@ All copy (agency name, services, process, founder bios, contact email) lives in
 
 Before launch, replace the placeholders marked `TODO` in that file:
 - `brand.email` — the inbox the contact form sends to
-- founder bios
 - the detail copy for each service
 
 ## Pages

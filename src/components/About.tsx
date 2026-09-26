@@ -22,7 +22,11 @@ export default function About() {
               <div>
                 <h3>{f.name}</h3>
                 <p className="founder-role">{f.role}</p>
-                <p>{f.bio}</p>
+                {f.bio.map((para) => (
+                  <p key={para} className="founder-bio">
+                    {para}
+                  </p>
+                ))}
               </div>
             </article>
           ))}

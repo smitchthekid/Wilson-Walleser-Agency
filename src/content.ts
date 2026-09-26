@@ -195,23 +195,30 @@ export const values = [
 export type Founder = {
   name: string;
   role: string;
-  bio: string;
+  bio: string[];
   initials: string;
 };
 
-// TODO: add real bios (and optionally a photo) for each founder.
 export const founders: Founder[] = [
   {
-    name: 'Mitchell',
-    role: 'Co-founder',
-    bio: 'Add a short bio for Mitchell: background, specialties, and what you love about this work.',
-    initials: 'M',
+    name: 'Mitch Walleser',
+    role: 'Senior Marketing Consultant',
+    bio: [
+      'Mitch Walleser is a senior marketing consultant with 9+ years of hands-on experience in SEO, paid search, email, and performance analytics. He specializes in diagnosing underperforming campaigns, building data infrastructure, and translating complex metrics into actionable strategy.',
+      'He works with diverse clients spanning critical manufacturing, automotive, hospitality, food/beverage, and AI-powered startups. His experience includes managing significant paid search budgets, restructuring tracking and attribution systems, ecommerce optimization, CRM integrations, and custom app development. His background covers the full marketing stack: technical SEO, campaign management, analytics modeling, strategic planning, and custom solutions.',
+      'That hands-on technical foundation shapes how he approaches strategy: pragmatic, data-driven, and skeptical of vanity metrics.',
+      'Based in the Minneapolis area, he works with growth-focused businesses looking for someone who understands both marketing fundamentals and business reality.',
+    ],
+    initials: 'MW',
   },
   {
-    name: 'Katelyn',
-    role: 'Co-founder',
-    bio: 'Add a short bio for Katelyn: background, specialties, and what you love about this work.',
-    initials: 'K',
+    name: 'Katelyn Wilson',
+    role: 'Director of Sales & Partnerships',
+    bio: [
+      'Katelyn Wilson leads client partnerships and revenue growth as Director of Sales and Partnerships. She meets with prospects to understand their challenges and identifies whether the agency can help. She develops solutions and manages the full relationship from discovery through delivery and expansion.',
+      "She spent six years driving business development and scaling sales operations in B2B markets, building high-performing teams and managing complex client relationships. She's handled CRM systems, executed integrated marketing campaigns, and worked across competitive markets. She has a degree in Communication Studies and Marketing and entrepreneurial experience as a small business owner.",
+    ],
+    initials: 'KW',
   },
 ];
 
