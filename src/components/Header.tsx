@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import { brand } from '../content';
 
 const links = [
-  { href: '#services', label: 'Services' },
-  { href: '#process', label: 'Process' },
-  { href: '#about', label: 'About' },
+  { to: '/services', label: 'Services' },
+  { to: '/#process', label: 'Process' },
+  { to: '/#about', label: 'About' },
+  { to: '/blog', label: 'Blog' },
 ];
 
 export default function Header() {
@@ -14,10 +16,10 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <a href="#top" className="logo" onClick={close}>
+        <Link to="/" className="logo" onClick={close}>
           <span className="logo-mark">{brand.shortName}</span>
           <span className="logo-text">{brand.name}</span>
-        </a>
+        </Link>
         <button
           className="menu-toggle"
           aria-expanded={open}
@@ -29,14 +31,21 @@ export default function Header() {
           <span className="menu-bar" />
         </button>
         <nav id="site-nav" className={`nav ${open ? 'nav-open' : ''}`}>
-          {links.map((l) => (
-            <a key={l.href} href={l.href} onClick={close}>
-              {l.label}
-            </a>
-          ))}
-          <a href="#contact" className="btn btn-primary btn-sm" onClick={close}>
+          {links.map((l) =>
+            // NavLink ignores the #hash, so only real pages get the active style.
+            l.to.includes('#') ? (
+              <Link key={l.to} to={l.to} onClick={close}>
+                {l.label}
+              </Link>
+            ) : (
+              <NavLink key={l.to} to={l.to} onClick={close}>
+                {l.label}
+              </NavLink>
+            )
+          )}
+          <Link to="/#contact" className="btn btn-primary btn-sm" onClick={close}>
             Get in touch
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
