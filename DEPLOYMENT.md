@@ -57,7 +57,17 @@ What `server.js` does:
 - Leaves `/healthz` and `/robots.txt` open so Railway's health check and crawlers can read them.
 - Refuses to start if the credentials below are not set.
 
-Railway setup:
+Railway setup, one command (Windows, macOS or Linux; needs Node 22):
+```bash
+npm run railway:setup
+```
+It installs the Railway CLI if missing, opens the Railway login, creates the
+project and a `qa-preview` service deploying from GitHub `main`, asks for the
+preview password (username defaults to `qa`), sets both variables, and prints
+the URL. Re-running it reuses what already exists. To skip the prompt:
+`PREVIEW_PASSWORD=... npm run railway:setup` (PowerShell: `$env:PREVIEW_PASSWORD='...'` first).
+
+Railway setup, by hand:
 1. New Project → Deploy from GitHub repo → this repo, branch `main`.
 2. Service → Variables: set `PREVIEW_USER` and `PREVIEW_PASSWORD`.
    Keep the password out of the repo; change it here and redeploy to rotate it.
