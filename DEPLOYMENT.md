@@ -46,7 +46,7 @@ Manual/static host deployment:
 A password-protected copy of the site for QA, deployed from `main`.
 Production stays on Cloudflare; Railway runs `server.js`, which Cloudflare never uses.
 
-`railway.json` sets the build (`npm ci && npm run build`), the start command
+`railway.json` sets the build (`npm run build`; Railway installs dependencies itself), the start command
 (`npm start` → `node server.js`) and the health check (`/healthz`).
 
 What `server.js` does:
