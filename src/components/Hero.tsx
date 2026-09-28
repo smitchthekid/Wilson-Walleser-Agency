@@ -1,4 +1,5 @@
-import { hero, services } from '../content';
+import { hero } from '../content';
+import ConnectDiagram from './ConnectDiagram';
 
 export default function Hero() {
   return (
@@ -17,13 +18,8 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="hero-card" aria-hidden="true">
-          <p className="hero-card-label">What we do</p>
-          <ul>
-            {services.map((s) => (
-              <li key={s.title}>{s.title}</li>
-            ))}
-          </ul>
+        <div className="hero-card">
+          <ConnectDiagram />
         </div>
       </div>
     </section>
