@@ -4,7 +4,7 @@ export const brand = {
   name: 'Wilson + Walleser',
   shortName: 'W+W',
   tagline: 'Digital marketing, run by the people you actually talk to.',
-  email: 'hello@example.com', // TODO: replace with the agency inbox
+  email: 'info@wilson-walleser.com',
   location: 'Remote-first, working with clients everywhere',
 };
 
@@ -204,10 +204,8 @@ export const founders: Founder[] = [
     name: 'Mitch Walleser',
     role: 'Senior Marketing Consultant',
     bio: [
-      'Mitch Walleser is a senior marketing consultant with 9+ years of hands-on experience in SEO, paid search, email, and performance analytics. He specializes in diagnosing underperforming campaigns, building data infrastructure, and translating complex metrics into actionable strategy.',
-      'He works with diverse clients spanning critical manufacturing, automotive, hospitality, food/beverage, and AI-powered startups. His experience includes managing significant paid search budgets, restructuring tracking and attribution systems, ecommerce optimization, CRM integrations, and custom app development. His background covers the full marketing stack: technical SEO, campaign management, analytics modeling, strategic planning, and custom solutions.',
-      'That hands-on technical foundation shapes how he approaches strategy: pragmatic, data-driven, and skeptical of vanity metrics.',
-      'Based in the Minneapolis area, he works with growth-focused businesses looking for someone who understands both marketing fundamentals and business reality.',
+      'Mitch Walleser is a senior marketing consultant with 9+ years helping businesses scale through SEO, paid search, and performance analytics. He specializes in diagnosing what is holding campaigns back, fixing broken tracking systems, and translating complex data into straightforward decisions for business owners.',
+      'Client engagements span critical manufacturing, automotive, hospitality, and AI startups. Day-to-day work often involves managing major paid search spend, overhauling attribution pipelines, and building custom marketing tools—grounding technical execution directly in business reality.',
     ],
     initials: 'MW',
   },

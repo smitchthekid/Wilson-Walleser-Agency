@@ -2,64 +2,92 @@
 title: "How Humans Search for Things Online: If That, Then This"
 slug: "how-humans-search-for-things-online-if-that-then-this"
 status: "publish"
-date: "2020-02-19 13:54:28"
-modified: "2020-08-03 07:45:10"
-excerpt: ""
+date: "2026-02-19"
+modified: "2026-10-03"
+excerpt: "How people really search, from Google to AI assistants, and how to match each kind of search intent with the right page on your site."
 tags:
-  - "import:test-1"
-import:
-  batch: "test-1"
-  source_file: "Please_cart_blog_export_test_1_R0noh_posts.sql"
-  source_database: "xpaocwyi_staging"
-  source_table: "R0noh_posts"
-  dump_generated: "Sep 26, 2026 at 12:30 AM"
-  wp_id: 211
-  wp_author_id: 2
-  wp_guid: "http://diyhive.com/?p=211"
-  editor: "gutenberg"
-  content_sha256: "46f14502a8835a21"
-  revisions_in_dump: 5
-  review_notes: []
+  - seo
+  - search-intent
+  - content-strategy
+  - ai-search
 ---
 
-## How Humans Search for Things Online: If That, Then This
+# How Humans Search for Things Online: If That, Then This
 
-Search engines help us get closer to things we desire by decoding the intent behind our verbal cues and filling in the blanks between what we want, and the where, when why and how of getting it.
+People think in "if that, then this." If I want *that*, then I do *this* to get it. Sometimes we don't know what the thing is called, or how to get it. We type what we do know and hope the search box fills in the rest.
 
-Humans are an "if that, then this" creatures. If I want *that*, then I do *this to get it*. Sometimes, we don't know what it's called, nor do we know how to get it, but sure as shit, if it exists, Google can find it.
+That gap between what someone types and what they actually want is called search intent. If your site answers the real question, you get the visit. If it answers a different one, you get a quick click on the back button.
 
-The difference between robots and humans >> humans already know what they want because they can thing through scenarios that they have not already encountered. The downside, is that humans don't always know exactly what they want. Robots are here to help us sift through that information. Humans define the criteria.
+## The hammer story
 
-While this might seem both obvious and boring, one must understand that robots do not control the internet. **Robots are good at uncovering important information but only after being told what to look for.**
+Bobby walks into a store and buys a hammer. A system watching only that purchase might guess he wants nails next. But Bobby bought the hammer to fix a loose fence board. Maybe he needs screws. Maybe he needs a new fence.
 
-### Humans don't always know what they want, but they always know what they DO NOT WANT
+Search works the same way. A query is a clue, not the whole story. A person can ask a store clerk a follow-up question. A search engine has to guess from the words, the context, and what people like them did before.
 
-When people search online, they don't always know exactly what they are searching for. Or, they know exactly what they want, but don't know what it is called
+## The four kinds of search intent
 
-The advantage humans have over robots is real time awareness. If Bobby walks into a store and buys a hammer, robots might think he also wants nails.
+Most searches fall into one of four buckets. Knowing which one you are writing for tells you what kind of page to build.
 
-Bobby bought a hammer to solve a problem. But was Bobby asking the right question? Search robots only look at a very narrow scope of user behavior.
+| Intent | What the person wants | Example search | Page that fits |
+| --- | --- | --- | --- |
+| Informational | To learn something | "why is my website slow on my phone" | Guide or blog post |
+| Navigational | To reach a specific place | "your business name login" | Clear homepage, contact and location pages |
+| Commercial | To compare options before choosing | "best website platform for a small shop" | Comparison, buyer's guide, or service page |
+| Transactional | To buy or book now | "web designer near me" | Landing page with a clear next step |
 
-Humans get the benefit of conversation, context, and follow up questions. Humans get to ask follow up questions.
+The examples above are illustrative, not pulled from any keyword report. The point is the pattern: the same person often moves through several of these in a single sitting.
 
-For now, robots think harder instead of smarter. If a person **searches for this**, then they must be **looking for that.**
+## One person, one chain of searches
 
-## Before the Search
+Here is a made-up but typical chain for a homeowner with a website problem:
 
-Google bots don't understand what you're asking them. **Bots don't know how to answer a question**, they just know how to find the answer to a question someone else has already answered. Google doesn't know what users are thinking, it just connects users who "they think" are "thinking the same thing".
+1. "website won't load on mobile" (informational)
+2. "why is my site slow" (informational, getting more specific)
+3. "website speed fix vs new website" (commercial)
+4. "web designer near me" (transactional)
 
-## After the Search
+Each step is an "if that, then this." If the page loads slowly, then I need to know why. If it is a deeper problem, then I need options. If I need help, then I need someone to hire. A business that only has a page for step four misses the three searches that came first.
 
-After any search, Google determines whether or not the user found what they were looking for. If 99/100 users click the back button after clicking the first search result, Google bots know what you asked for, but they don't know what you're looking for. Google makes its money in gold by understanding what happened after the click.
+## What happens before, during, and after a search
 
-A robot may infer what people want --- only after they click on a search result. Further, by observing the next click and making wide guesses as what a person might expect to find.
+**Before the search.** The person has a problem and some words for it. Those words may not match yours. A customer might say "leaky faucet" while your site says "plumbing repair." Write with their words.
 
-Google not only knows what you click on after you search, but it also knows what you click next, but it also knows what you click after that.
+**During the search.** The engine reads the query, guesses the intent, and picks pages that seem to fit. It also uses context such as location, language, and past activity. This is why two people can see different results for the same query, and why a rank check on your own laptop is only a rough guide.
 
-Even if you say "get me the hell out of here" after the first search, you'll probably still keep Googling until you find what you're looking for.
+**After the click.** This is where search engines learn the most. Did the person stay, or did they go back and try something else? Search engines have said little about exactly how they use this kind of behavior, so we don't treat it as a formula. What we do know from working with sites is simpler: pages that answer the question quickly tend to keep visitors, and pages that bury the answer lose them.
 
-Google evaluates all of these interactions, creates metrics based on how related the search results were (did they click, download, or keep searching), looks at the previous searches, and then infers the most likely meaning based upon those who were analyzed in the same way.
+## How AI assistants change the picture
 
-Now imagine this happening on a scale of billions of search queries a day. Every variation of two or more words allows Google an anonymous-looking glass of what users wanted to find...and what they actually find.
+Search used to mean ten blue links. Today people also get written answers at the top of the results page, and many ask questions directly in AI assistants. Others search inside video and social apps, or ask by voice.
 
-Yeah, robots are still a bit awkward and clumsy — they were trained by the best..
+That changes the "robots only retrieve" idea. Many tools now write an answer in plain language instead of only listing pages. But the principle from the old version of this post still holds: these systems work from what people have already published. They pull from pages that state things clearly and come from a source they can trust.
+
+In practice, being the answer looks like this:
+
+- **Answer first.** Put the direct answer in the first paragraph, then explain.
+- **Use the customer's words.** Match how people phrase the question, including the awkward versions.
+- **Make the page easy to read by machines.** Clear headings, fast loading, and pages search engines can crawl.
+- **Show who is behind it.** Real names, real expertise, and a consistent business name and details across the web.
+- **Cover the follow-up questions.** If the first answer leads to a second question, answer that too.
+
+None of this is a trick. It is the same advice that has always worked for people, written down in a way that machines can also use.
+
+## What to do with this
+
+Start with the questions your customers ask before they ever call you.
+
+1. **List the questions.** Pull them from sales calls, emails, reviews, and the search terms in your analytics.
+2. **Sort them by intent.** Which are people learning, comparing, or ready to buy?
+3. **Check what you have.** Each question should have a page that fits its intent. Gaps are your content plan.
+4. **Write for the person first.** Short, clear, and specific beats long and vague.
+5. **Measure what happens.** Look at which searches bring people to the site and what they do next. Our [Google Analytics navigation guide](/blog/google-analytics-navigation-guide) is a good place to start.
+
+If you want more on why useful content beats paying for every click, read [what content marketing is and how it compares with paid advertising](/blog/what-is-content-marketing-how-does-it-outperform-paid-advertising). And if you are weighing tools for this work, see [how to find the right SEO tool](/blog/find-the-right-seo-tool).
+
+## Where we fit in
+
+Tools can sort thousands of queries in minutes. They can't tell you which customer you want or what they really mean. That part is human judgment, and it is where we spend our time. Our [SEO and content work](/services/seo-content) starts with the questions behind the clicks, then builds the pages that answer them.
+
+## Next step
+
+Not sure what your customers are really searching for? [Tell us about your business](/#contact) and request a quote. You'll work directly with the two of us.

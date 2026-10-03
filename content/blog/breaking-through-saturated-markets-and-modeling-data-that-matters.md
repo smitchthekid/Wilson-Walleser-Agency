@@ -1,93 +1,97 @@
 ---
-title: "How Musicians Can Improve Their Marketing Results"
+title: "How Artists Can Market Their Music in 2026"
 slug: "breaking-through-saturated-markets-and-modeling-data-that-matters"
 status: "publish"
-date: "2020-03-24 03:16:46"
-modified: "2020-04-05 23:59:03"
-excerpt: ""
+date: "2026-03-24"
+modified: "2026-10-03"
+excerpt: "Followers are not income. How artists and creators can own their audience, track what earns money, and market smarter in a crowded market."
 tags:
-  - "import:test-1"
-import:
-  batch: "test-1"
-  source_file: "Please_cart_blog_export_test_1_R0noh_posts.sql"
-  source_database: "xpaocwyi_staging"
-  source_table: "R0noh_posts"
-  dump_generated: "Sep 26, 2026 at 12:30 AM"
-  wp_id: 746
-  wp_author_id: 2
-  wp_guid: "https://pleasecart.com/?p=746"
-  editor: "gutenberg"
-  content_sha256: "fab9df7279cbec70"
-  revisions_in_dump: 5
-  review_notes:
-    - "1 link(s) to pleasecart.com pages; update after migration"
+  - music marketing
+  - analytics
+  - first-party data
+  - social media
 ---
 
-# How Musicians Can Improve Their Marketing Results
+# How Artists Can Market Their Music in 2026
 
-*The music industry is competitive. Here’s the beat by beat on digital analytics that matter for artists.*
+Followers are not income. A big number on a profile feels good, but it does not tell you who will buy a ticket, a record, or a shirt. That gap is where most artists, creators, and small brands lose money in a crowded market.
 
-## Things Artists & Labels MUST Be Doing to Win in Nu-Digital
+Music marketing has never been easier to start or harder to win. Anyone can publish, and everyone does, so your posts compete with every other release, reel, and ad in the feed. The artists who break through are not always the loudest. They know who their audience is, how to reach it directly, and which activity actually pays.
 
-It’s not 2009 anymore. If you want to break through the saturation of digital markets, you need lean, nimble, and technical strategies that adapt quickly.
+## Why a crowded market punishes rented audiences
 
-It’s been a decade long roller coaster ride for the music industry. In 2013 I wrote an article contrasting the ways in which the digital world has reshaped the music industry. What I didn’t expect: things haven’t changed much.
+Social platforms and streaming services are rented space. They set the rules, and they can change who sees your posts, what they pay, or whether your format is favored at all. If your only way to reach fans is a feed you do not control, a single algorithm change can erase years of work.
 
-**Music marketing has never been harder, and it’s also never been easier.**
+The fix is not to leave those platforms. Use them to be discovered. Then move people to places you own, so you can reach them again without paying for the privilege.
 
-Why, because the internet broke open the floodgates long ago, built independent stardom, and built grammy winners out of soundcloud rappers and bedroom producers.
+## Own three assets
 
-What’s clear: organic reach through creative social media is not to be underestimated. However, one should not mistake views and likes for meaningful business activities.
+### 1. Your website
 
-**The problem: a low barrier to entry created a ripe platform for corporate funds to saturate your news feeds.**
+A website is more than a box to check. It is the one place where you control the message, the design, and the data. At minimum it should have a short bio, your music or products, upcoming shows or releases, and a clear way to sign up. Make it fast and easy to use on a phone, because that is where most fans will land.
 
-What’s great about working with artists and musicians on marketing and advertising strategies? More doing, less thinking.
+If you are weighing what a site involves, our post on [how much a website costs](/blog/how-much-does-a-website-cost) covers what drives the price.
 
-Instead of throwing money at a problem, artists get creative, think deeply about their audience, and go fearlessly into the unknown.
+### 2. Your email list (and text list, if you use one)
 
-To this day, artists and musicians are clever influencers. Where artists leave money on the table: evaluating which digital activities generate results. In big money conversations, every activity is evaluated down to the click. Not ad clicks, or website clicks: it’s the money clicks.
+An email list is the most direct line to your fans. Nobody sits between you and the inbox deciding who gets to see the message. Offer something worth signing up for, such as early access, a demo, or first notice of tickets, and collect addresses on your site and at shows.
 
-## Have a Website, Have a Strategy
+### 3. Your data
 
-Did you just check this box? Nah. Hold up.
+Data you collect yourself, such as who signed up, who clicked through to buy, and which pages brought people in, tells you what is working. Platform dashboards only show you what the platform wants to show. Your own measurement shows you the full path from post to sale.
 
-Having a website is as easy as Wix, WordPress, or Space.
+## Measure money, not likes
 
-Don’t fall into the trap of 80% of people that have websites…and 100% not knowing why or what to do next. Take five seconds to consider why you build one.
+Likes and views are a signal, not a result. Ask a harder question of every activity: did it lead to a sale, a signup, or a show attended?
 
-But did you build one? Let’s talk about the less obvious answers.
+Here is a practical starting point.
 
-## Own Your Website, Own Your Data, Own Your Platform
+- **Set up Google Analytics 4 on your site.** It is the current version of Google Analytics, and it replaced the older Universal Analytics.
+- **Mark the actions that matter.** Tell Analytics which actions count as results, such as a newsletter signup, a click to buy tickets, a merch purchase, or a pre-save click.
+- **Exclude your own visits.** If you and your team are clicking around the site, you are polluting your own numbers. Analytics lets you define internal traffic and filter it out.
+- **Tag your links.** Add tracking parameters (called UTM tags) to links you share, so you can tell whether a sale came from Instagram, an email, or a podcast mention. Test your link-in-bio tool, since some tools can make it harder to see where a visit came from.
+- **Respect privacy rules.** If you collect emails or run tracking, use a consent banner where the law calls for one, and honor people's choices. Rules vary by place, so talk to a lawyer about what applies to you.
 
-The purpose of a website: Owning your data, owning your platform, and owning your audience. If you built 40K followers on your Facebook in 2009, you know the pain of paying to reach each one of those of followers just a couple years later.
+Our beginner's guide to [Google Analytics metrics](/blog/google-analytics-metrics-for-beginners) explains what the numbers mean once they are flowing. Setting this up properly is part of our [Email & Analytics](/services/email-analytics) work.
 
-We all know how many followers we have, kind of, but how many are we reaching on a regular basis? How many of those followers just followed us because we followed them, or vice versa?
+## A simple weekly scorecard
 
-I’m not talking about how many people that engaged with your instagram posts, liked your Facebook status, or the 2,020 people who made you $22 on spotify last year.
+You do not need a dozen dashboards. Pick five numbers and look at them once a week:
 
-How much money did you social media following and social media streams make you last year? If you were on the road and playing shows, there are so many ways to capture audiences that don’t require facebook feeds. Groups, local event optimization, Facebook events, 3rd party event listings, ect.
+| Question | What to track |
+| --- | --- |
+| Is the audience growing where you own it? | New email signups |
+| Are people coming to your site? | Website visits, by source |
+| Are they taking action? | Clicks to buy, stream, or book |
+| Is anything earning money? | Sales and revenue by source |
+| Which channel is worth your time? | Results per hour spent, by platform |
 
-If the numbers are going up, that’s great! But how much time do you spend flexing on instagram, gaming new strategies, and floundering in statistically irrelevant power moves?
+If a channel eats ten hours a week and produces no signups or sales, that is worth knowing. If a small channel produces most of your sales, give it more attention.
 
-Data is abundant. Good data is far more lucrative. Monetizing data is the difference between winners and losers.
+## Where AI helps and where it does not
 
-**What’s more valuable than data: data that empowers meaningful business decisions.**
+AI tools can save time on the dull parts: sorting through comments, drafting caption and subject-line options, and cutting one long video into short clips. Use them for first drafts and let a person decide what goes out. Your voice is the thing fans came for, and a tool that sounds like everyone else will not build a following.
 
-For music marketing, that means understanding how fans discover you. How do fans engage with your website content? How many of them came to your website and never clicked anything? How many of your website hits are bot traffic? How many of your website clicks are coming from inside the house….?
+## Be findable, too
 
-If you’re not filtering out your own clicks out of your website analytics, you have a data integrity problem. If you’re not sure how to fix this or where to start, it’s something a google search will cover. Otherwise, [send an email to the Please Cart team for help from a specialist at no cost.](mailto:sales@pleasecart.com)
+Some people now ask search engines and AI assistants about artists and products. A clear, crawlable site with a real bio, your releases, and your events gives those tools something accurate to pull from. Keep the basics current and consistent everywhere your name appears. Our [SEO & Content](/services/seo-content) work covers how to structure pages so they can be found.
 
-## Optimize Your Time Spent by Measuring Value Received
+## When to add paid advertising
 
-What we really want to understand is what what influence we have, and what influence we don’t. What online activities, tweets, posts, shares, ect are generating meaningful clicks, and which ones are not?
+Ads can help once two things are in place: tracking that shows what an ad produces, and an offer that already converts without paid support. Without those, you are paying to guess. Start small, measure results against the actions you defined above, and scale only what works. Our [content marketing post](/blog/what-is-content-marketing-how-does-it-outperform-paid-advertising) explains how organic and paid work together.
 
-Yes, the two most important words in music: **new** and **free**. But that doesn’t mean forgetting about retaining the followers you have. For mature artists, the latter is a lot more important. As audiences swell, channels get narrower as media platforms start asking your for money just subscribers to see your new content, regardless if they engage with it.
+## A checklist to start with
 
-- Have products for sale
-- Install Google analytics for your website
-- Purge bad data and self-clicks, understand your key metrics
-- Evaluate your organic growth opportunities
-- Optimize your page designs for subscribers and checkouts
-- Consider paid opportunities when the time is right
+- Put something for sale or sign-up on your own site
+- Install Google Analytics 4 and mark your key actions
+- Filter out your own visits and clean up bad data
+- Add tracking tags to the links you share
+- Start an email list and promote it everywhere
+- Review five numbers weekly, and drop what does not earn
+- Consider paid ads only once tracking and an offer are working
 
-To be continued.
+If you are building an audience and want help with [social media](/services/social-media) and the measurement behind it, we can look at how your channels fit together.
+
+## Talk to us
+
+Want a clearer read on what is actually earning money from your audience? [Tell us about your project through our contact form](/#contact) and request a quote. You can also reach us at info@wilson-walleser.com.

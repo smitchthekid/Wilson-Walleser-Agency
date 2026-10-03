@@ -2,68 +2,98 @@
 title: "How Much Influence Does the Internet Have on Customer Purchases?"
 slug: "how-much-influence-does-the-internet-have-on-customer-purchases"
 status: "publish"
-date: "2019-11-15 07:26:12"
-modified: "2020-08-03 07:11:50"
-excerpt: "If you’re reading this, it’s probably because you’re looking for your customers online. Good news: they’re also looking for you. So how do we start the conversation with a warm introduction and skip the small talk?"
+date: "2025-11-15"
+modified: "2026-10-03"
+excerpt: "Customers research online before they buy. See how search, reviews, social, and AI answers shape purchases, and how to measure what drives yours."
 tags:
-  - "import:test-1"
-import:
-  batch: "test-1"
-  source_file: "Please_cart_blog_export_test_1_R0noh_posts.sql"
-  source_database: "xpaocwyi_staging"
-  source_table: "R0noh_posts"
-  dump_generated: "Sep 26, 2026 at 12:30 AM"
-  wp_id: 263
-  wp_author_id: 2
-  wp_guid: "https://mitchleemarketing.wordpress.com/?p=82"
-  editor: "gutenberg"
-  content_sha256: "e3d33639996ead11"
-  revisions_in_dump: 3
-  review_notes: []
+  - customer journey
+  - analytics
+  - seo
+  - attribution
 ---
 
 # How Much Influence Does the Internet Have on Customer Purchases?
 
-A lot.
+A lot. For most businesses, the internet shapes a purchase long before a customer fills out a form, calls, or walks in the door. The more useful question is which parts of the internet influence your customers, and whether you can prove it.
 
----
+## Short answer
 
-If you’re reading this, it’s probably because you’re looking for your customers online. **Good news**: they’re also looking for you. So how do we start the conversation with a warm introduction and skip the small talk?
+Most buyers, whether a consumer or a business, looks something up online before spending money. That does not mean every sale happens online. A person might read reviews on their phone and then buy in your store. A purchasing manager might compare vendors for weeks and then call you. Both were influenced by the internet. Only one shows up as an online sale.
 
-Let’s start with some basic stats on how online experiences influence online shopping behavior.
+## Where do customers research before buying?
 
-### Business-to-Consumer-Marketing (B2C)
+Buyers rarely follow one path. Common stops include:
 
-- 90% of shoppers are not absolutely certain of the brand they want before they begin searching online.
-- Over 50% of consumers state that reading blogs has an influence on whether they make a purchase or not.
-- 61% of consumers say that they are more likely to buy from a company that provides custom content
+- **Search engines.** Still the default starting point for many purchases, especially when someone has a specific problem to solve.
+- **Reviews and maps.** For local businesses, Google reviews and your Google Business Profile often decide who gets the call.
+- **Video and social platforms.** YouTube, TikTok, Instagram, and Reddit are where many people look for real opinions and demonstrations.
+- **Marketplaces and comparison sites.** Shoppers check prices and reviews on other sites before they come to yours.
+- **AI assistants.** More people now ask ChatGPT, Gemini, Perplexity, or Google's AI answers for recommendations instead of scrolling through a list of links.
 
-### Business to Business Marketing (B2B)
+Many people also start without a firm brand in mind. They have a need, they search, and whoever answers the question well earns a spot on the shortlist.
 
-- 89% of B2B researchers use the internet during the B2B research process.
-- 90% of B2B researchers who are online use search specifically to research business purchases.
-- 71% of B2B researchers start their research with a generic search
+Business buyers do the same thing with more people involved. A decision often passes through several colleagues, and much of the research happens before anyone talks to a salesperson. If your website and content do not answer their questions, you may never learn you were being considered.
 
-Putting a product or service online doesn’t mean that somebody will find it. For every 100 people that find your product online, if 1 of them buys something (1%) you’re doing something right. It’s a numbers game — a game that’s won and lost by focusing on the right numbers.
+## Does AI search change this?
 
-It’s easy to make statistics look pretty. It’s easy to spend a lot of cash on marketing and advertising services as long as the numbers keep going up. Everyone loves data that supports their inner-narrative.
+Yes, in one important way: more answers now appear without a click. When an AI summary or assistant names a few businesses and explains why, customers may form an opinion about you without visiting your site.
 
-## It’s easy to justify marketing spend. What’s really hard…validating that spend.
+You cannot control those answers, but you can make your business easier to recommend:
 
----
+- Say clearly on your site what you do, who you serve, and where.
+- Publish helpful, accurate content that answers real customer questions. Our [SEO and content service](/services/seo-content) is built around this.
+- Keep your Google Business Profile and other listings accurate and current.
+- Earn genuine reviews and respond to them.
+- Use structured data (schema.org markup) so machines can read the basics about your business.
 
-Validation: the action of checking or proving the validity or accuracy of something.
+Be wary of anyone who promises guaranteed placement in AI answers. Nobody can promise that, and measuring AI referrals is still immature.
 
-In that same scenario, if you spent $1000 per each $1 of generated revenue, you’ll of those online transactions attributed
+## Why is it hard to prove the internet influenced a sale?
 
-For 99.9% of sites, that rate is probably closer to 0%. And that’s okay. One of the biggest differences in overhead websites costs is whether or not your require the infrastructure
+Because customers touch many things before they buy, and tracking tools only see some of them. A few reasons:
 
-It certainly doesn’t mean they’ll buy it. *Not even if the want it.*
+- **Privacy changes.** Browsers and operating systems limit tracking, and consent rules mean some visits are never recorded.
+- **Offline results.** Phone calls, in-store visits, and referrals do not always connect to an online source.
+- **Credit goes to the last click in many reports.** Some reports, including Google Ads conversions based on GA4 key events, give credit to the last interaction, so the ad or search right before a purchase gets the credit, while the review, video, or article that did the persuading gets none.
+- **Platform reports disagree.** Each ad platform tends to claim the sale, so adding them up can overcount.
 
-Selling products online is competitive. It’s easy to eat up your margins before you’ve cleared any sales. This is not the field of dreams. It’s a long-term game that requires a long-term strategy.
+This is why it is easy to justify marketing spend and hard to validate it. A dashboard full of rising clicks and impressions can look great while sales stay flat.
 
-If you’re tired of burning through your budget faster than you can say “advertising agency”, then you’ve come to the right place.
+## How do you measure what is actually driving sales?
 
-**We don’t need to reinvent the wheel; we just need to provide information in a more compelling and organized way than our competitors.**
+Start with leads and revenue, not clicks. A practical setup includes:
 
-We build lean marketing and advertising campaigns that connect ideal customers…the ones that deliver long-term profits and repeat purchases. Let's catch the bigger, badder fish and leave the junk trophies for my competitors. But first, what are we trying to catch?
+1. **Proper tracking.** Google Analytics 4 with real conversions set up (form fills, calls, purchases), plus tag management so changes are controlled. Our [email and analytics service](/services/email-analytics) covers this setup, and our guides on [Google Analytics metrics for beginners](/blog/google-analytics-metrics-for-beginners) explain the numbers.
+2. **A record of where leads end up.** Tie leads to a CRM or even a simple spreadsheet so you can see which became customers.
+3. **Ask people.** Add a "How did you hear about us?" field to forms and ask on calls. Self-reported answers catch the influences tracking misses, like a podcast, a review, or an AI recommendation.
+4. **Compare, don't just count.** Look at total leads and revenue against total spend, and watch what happens when you change one channel.
+5. **Test when you can.** Pausing a campaign in one area or time period and comparing results can show what the campaign was really adding.
+
+If you run ads, [paid advertising](/services/paid-advertising) should be judged on the same standard: leads and revenue, not clicks.
+
+## What should you do first?
+
+You do not need to fix everything at once. Work through this list in order:
+
+- Confirm your website clearly says what you offer, where, and how to contact you.
+- Check that your key conversions (forms, calls, purchases) are tracked and accurate.
+- Claim and complete your Google Business Profile if you serve a local area.
+- Read your own reviews and answer them.
+- Search for your own services in Google and an AI assistant, and note who shows up and what they say.
+- Add a "How did you hear about us?" question to your main form.
+- Pick one or two questions customers ask all the time and publish a thorough answer. Our post on [how people search for things online](/blog/how-humans-search-for-things-online-if-that-then-this) is a good place to start, and so is [how content marketing compares to paid advertising](/blog/what-is-content-marketing-how-does-it-outperform-paid-advertising).
+
+## Frequently asked questions
+
+**Do customers still buy from businesses they have never searched for?**
+Yes. Referrals, repeat buying, and offline word of mouth still matter. The point is that even those buyers usually check you out online before committing.
+
+**Is a blog enough to influence purchases?**
+A blog helps, but it is one piece. Reviews, video, accurate listings, and a clear website matter just as much, and often more.
+
+**Can I track everything?**
+No. Some influence will always be invisible. Aim for good enough tracking that supports confident decisions, and fill the gaps by asking customers directly.
+
+## Not sure which channels bring you customers?
+
+If you are not sure what is driving your sales, we can help you sort it out. [Tell us about your business](/#contact) and request a quote, and we will talk through your current setup and where to focus first. You can also reach us at info@wilson-walleser.com.

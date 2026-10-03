@@ -1,116 +1,153 @@
 ---
-title: "How Much Does a Website Cost?"
+title: "How Much Does a Website Cost in 2026? A Plain Guide"
 slug: "how-much-does-a-website-cost"
 status: "publish"
-date: "2019-11-19 02:40:00"
-modified: "2020-04-06 00:35:56"
-excerpt: ""
+date: "2025-11-19"
+modified: "2026-10-03"
+excerpt: "What a small-business website really costs: build, domain, hosting, maintenance and ecommerce fees, and what drives the price up or down."
 tags:
-  - "import:test-1"
-import:
-  batch: "test-1"
-  source_file: "Please_cart_blog_export_test_1_R0noh_posts.sql"
-  source_database: "xpaocwyi_staging"
-  source_table: "R0noh_posts"
-  dump_generated: "Sep 26, 2026 at 12:30 AM"
-  wp_id: 270
-  wp_author_id: 2
-  wp_guid: "https://mitchleemarketing.wordpress.com/?p=129"
-  editor: "gutenberg"
-  content_sha256: "8baef994bde4f36e"
-  revisions_in_dump: 1
-  review_notes: []
+  - websites
+  - pricing
+  - small business
 ---
 
-# How Much Does a Website Cost?
+# How Much Does a Website Cost in 2026? A Plain Guide
 
-First, there's no scientifically valid way of determining how much a website costs. Yes, we can look at averages and market expectations, but even within the industry, everyone uses different cost structures.
+There is no single price for a website. A one-page site built from a template and a custom ecommerce store are different projects, and they cost very different amounts. But "it depends" is not a useful answer, so this guide breaks the cost into its parts, explains what moves each one, and shows you what to ask for in a quote.
 
-What we can do is look at the bare-minimum of keeping a website online. One thing is certain: inflation and the never ending demand for faster, more data intensive websites will increase websites costs over time. I wrote the body of this article ~3 months ago and I can already tell you my server costs have already gone up.
+A website has two kinds of cost. You pay once to build it, and you pay over time to keep it running, secure and useful. Most people only budget for the first.
 
-The good news is, bare-bones website hosting cannot get much cheaper than it already is for quality service offerings.
+## The short answer
 
-# **Initial Website Costs**
+Think in four tiers. Each one costs more than the last because it takes more work, not because the label sounds fancier.
 
-## Domain Name Purchase Costs
+- **Do it yourself on a template.** You pick a platform, a template and a plan, and you do the writing and setup. Your cost is mostly a monthly subscription and your own time.
+- **Template plus professional setup.** A template is customized to your brand, your pages are written and organized properly, and tracking is installed. Good for a local service business with a handful of pages.
+- **Custom design and build.** A site designed around your customers and your goals, with custom layouts, a content plan and conversion work. This is where most growing businesses land.
+- **Ecommerce or complex builds.** Product catalogs, checkout, integrations, memberships, or multiple languages. The more moving parts, the more design, development and testing.
 
-Each site requires a unique domain name.
+We do not publish a rate card because the same tier can vary a lot with scope. If you want numbers for your project, [request a quote](/#contact) and we will scope it with you.
 
-Generally, a domain **requires a one time purchase fee (usually around $12)** and then a recurring payment of the same amount each year. Monthly hosting usually ranges between $8 - $15 depending on the number of domains and monthly data requirements. That generally includes essential, integrated security protocols which have become a web standard over the last few years.
+## What drives the price
 
-[That's not to say you can't host a website for less than $5 a month](https://www.webhostingsecretrevealed.net/website-hosting-cost/), but over here we like fast, responsive internet experiences that go online and stay online. I'm not going to go deep into the metrics of website costs/performance here, but you will get what you pay for (and be punished accordingly if you skim on the most critical asset of your website).
+Whatever tier you choose, these are the factors that move the cost most:
 
-Remember, that if you build your website on something like Wix, SquareSpace, or Wordpress.org, you're going to be 'taxed' in perpetuity and get really mediocre server performance. ([Wordpress.com is a different thing](https://www.wpbeginner.com/beginners-guide/self-hosted-wordpress-org-vs-free-wordpress-com-infograph/))
+- **Number of pages and templates.** Ten pages that share three layouts cost less than ten pages that each need their own design.
+- **Custom design versus a template.** Starting from a template is faster. Custom work costs more and fits you better.
+- **Content.** Someone has to write the copy and source the photos. If you already have both, the project is smaller. If we write and shoot it, it is larger.
+- **Features.** Booking, quote forms, member logins, search, and anything that connects to other software add build and testing time.
+- **Ecommerce.** Product count, shipping rules, taxes and checkout options all add up.
+- **Timeline.** A rushed project takes priority over other work, and the price reflects that.
+- **Who maintains it.** A site you update yourself costs less to run than one we look after each month.
 
-So, the good news is, once you've found a name for your website that isn't taken, it will cost you only $10-12 a year to secure the domain, and another $8 - $15 a month for something that's zippy fast with multi-site support.
+## What it costs to build
 
-[Search for a domain that isn't taken >> I prefer Namecheap](https://www.namecheap.com/domains/domain-name-search/)
+Building a site covers more than making it look good. A complete build usually includes:
 
-## Server Hosting Costs
+- Planning: who the site is for, what each page should do, and how visitors move through it.
+- Design: layouts for desktop and mobile that match your brand.
+- Development: turning the design into a working site that loads quickly.
+- Content: page copy, images, and service or product descriptions.
+- Setup: forms, redirects from your old site, analytics, and search basics.
+- Testing: checking every page and form on real devices before launch.
 
-The files of every website require a centralized server which stores the website's content infrastructure. The cost of server hosting varies based upon the sites requirements for speed, file transfer, and number of users. More users means more file transfers, which means a faster server is required to maintain site speed.
+Cheap quotes often leave out one or more of these. That is fine if you plan to handle them yourself. It is a problem if you assume they are included.
 
-Generally, **server hosting for my average customer is between $10-$20 a month** for a 1 - 3 domains (website addresses). That's because I don't use the cheapest, slowest servers. I prefer server hosting with prompt and well trained customer service because if issues arise, they can identify and resolve problems faster without having to rip the metaphorical motor out of your website and remachine the pistons. The saves a lot of costs from being passed down to the customer.
+## Costs that repeat
 
-Most websites do not require extraordinary security measures, server side caching, or massive file traffic and file loads, hence 99% of websites will fall within the above data tier. Server hosting is provided by many companies you've likely seen advertisement for: GoDaddy, Hostgear, Dreamhost, Rochen, ect. (Again Wordpress.com, SquareSpace, and Wix are "all-in-one-hosting" solutions that you'll pay extra for based on convenience)
+These are the costs that show up after launch.
 
-Personally, I've been working with Rochen for roughly the last 10 years and while they are not perfect, they've also been more than helpful with working out an issues and have a ton of value added services that make my life easier, and my customer's websites less expensive.
+### Domain name
 
-## Value Added Services
+Your domain is your web address. You pay for it by the year, and the price depends on the ending (.com, .net and so on) and the registrar you buy from. Renewal prices are sometimes higher than the first-year price, so check both before you buy.
 
-Hosting companies provide many value added services to win your business by making the deal sweeter (and your life easier). Some of these services include free registration of a domain name, transfer of your old website to your new domain, or installation of content management platforms like WordPress.
+Two habits matter more than the price. Turn on auto-renew, and make sure the domain is registered in your own account. If you let a domain expire, someone else can register it, and getting it back can be expensive or impossible.
 
-The thing about those services is they usually get baked in to a recurring monthly fee. Thus, you can end up paying 25 - 30% in monthly fees over the life of your website.
+### Hosting
 
-My customers enjoy me handling all of their mission-critical recurring payments that keep their website online and I just pass along the invoice. Most people don't realize that if you forget to renew the license for the name of your website every year, people can steal it from you. It's not joke. [Google once paid a guy $10K because they forgot to renew their .com domain.](https://www.businessinsider.com/google-rewarded-the-guy-who-bought-googlecom-2016-1) Luckily, he was a very nice guy and they simply gave him a reward for returning it to them.
+Hosting is where your site's files live. The cost depends on the approach:
 
-## Considering File Size and Video Bandwidth Limitations
+- **All-in-one platforms** such as Squarespace, Wix and Shopify bundle hosting, templates and support into a monthly subscription. They are convenient, but the monthly fee often runs higher than bare hosting.
+- **Managed or shared hosting** for WordPress and similar systems is usually a lower monthly cost, with more control and more upkeep.
+- **Modern static and edge hosting** can be very inexpensive for simple sites, but usually needs a developer to set up.
 
-A website which hosts unlimited movies and music for user download, or one that sees overs 100K users each month requires more storage, faster speeds, and higher file transfer rates to maintain stable function and prevent crashes. Sites with large volumes of visitors, extensive media downloads, or integration of many sites into the same account may exceed $100/month or more, if not hundreds-of-thousands-and-millions per month for enterprise level media sites (Netflix, Amazon, Ect)
+Cheap hosting is not always a bargain. A slow server can cost you visitors and search rankings, and support that takes days to answer is expensive when your site is down.
 
-## **Website Administrative Costs**
+### Business email
 
-### Website updates
+Email at your own domain (you@yourcompany.com) usually runs through Google Workspace or Microsoft 365, billed per user per month. It looks more professional than a free address and is part of a normal website budget.
 
-Website updates are an essential task in maintaining the functionality of a website. Just like updates for your phone, a fast, safe, and functional website requires maintenance. Developers must respond nimbly to changes from many sources and ensure cohesiveness for the device in question: Tablet, iPhone, Desktop, ect.
+### Maintenance
 
-## Administration and Website Updates
+A website is not a brochure you print once. Software needs updates, backups need to run, forms get spam, and security issues appear. Ongoing care typically covers:
 
-Some clients have the internal resources and skill sets to update their website on their own, while many prefer the ease and "worry-free" option of hiring a developer for web and security maintenance.
+- Software, plugin and security updates
+- Regular backups and the ability to restore them
+- Uptime monitoring
+- Small content changes
+- Speed checks
 
-#### Administrative Updates:
+You can do this yourself, pay for work as it comes up, or put it on a monthly care plan. A care plan costs more per month but removes surprises. Pay-as-you-go can look cheaper until something breaks on a Friday afternoon. If you want help with this, ask about it when you [request a quote](/#contact).
 
-- Changes to fix bugs and security loopholes
-- Changes to improve website speed and page load times
-- Updates to the Content Management System (CMS) platform (Ex: WordPress, SquareSpace, Wix, Drupal, ect.)
-- Updates for evolving regulation and legal compliance (Ex: [Europe's new privacy requirements](https://www.wired.com/story/europes-new-privacy-law-will-change-the-web-and-more/))
-- Security certificates and protocol updates
+## Ecommerce costs
 
-#### Website Updates that Stem from External Forces
+If you sell online, add these to the list:
 
-Continual updates for the latest best practices ensure compliance with updates to various search engines like (Google algorithms), regulatory compliance, page speed improvements, and core infrastructure updates from framework and plugin developers.
+- **Platform fees.** Hosted platforms charge a monthly subscription. Self-hosted stores charge for hosting and for any paid extensions.
+- **Payment processing.** Card processors take a percentage of each sale plus a small fixed fee. The exact rates differ by provider and by your sales volume, so check the current rates before you commit.
+- **Checkout upkeep.** Payment methods change. Someone needs to watch failed payments, tax rules and shipping settings.
 
-- Changes in user behavior or customer preferences and suggestions
-- Updates for new and legacy support of device platforms
-- Adding checkout options for new payment technologies (Bitcoin, Apple Pay, ect)
-- Updates and changes required by partners or affiliates
+A smooth checkout is the most important part of an online store, so it is worth paying for it to be tested properly.
 
-## Ecommerce
+## Costs people forget
 
-### Initial Ecommerce Costs
+These rarely appear in a first estimate, and they cause most budget surprises.
 
-The initial costs of getting your products online and ready for sale varies for each business. The number of products, complexity of the products, checkout features, security requirements, and extent of customer information management all have implications,
+- **Speed and performance.** Google measures how fast your pages load and how stable they feel, and slow pages lose visitors. Good performance takes careful build work and decent hosting.
+- **Accessibility.** A site should be usable by people with disabilities, including people using screen readers or keyboards. The common standard is the Web Content Accessibility Guidelines (WCAG). Building to it from the start is far cheaper than fixing it later.
+- **Privacy and cookie consent.** If you run analytics or advertising tags, you may need a consent banner and a privacy policy that matches what your site does. The rules differ by state and country, so ask a lawyer about your own situation.
+- **Tracking.** Google Analytics 4 and Google Tag Manager are standard. Setup takes real time, and it is how you learn which pages bring in leads. Our [email and analytics](/services/email-analytics) service covers this.
+- **Search basics.** Page titles, clear structure and fast pages should be built in, not added later. Our [SEO and content](/services/seo-content) work picks up from there. For tool choices, see [how to find the right SEO tool](/blog/find-the-right-seo-tool).
+- **Ongoing content.** A site that never changes slowly stops working. Plan for new pages, updates and fresh photos.
 
-### Recurring Ecommerce Costs
+## Doing it yourself versus hiring help
 
-Just like doing business in a retail store, each online transaction incrues a marginal expenditure, generally between 1 - 3% for each transaction when using payment platforms like Stripe, Paypal, or Shopify. Some payment platforms simply require a one-time fee to purchase the service, while others like Shopify require a recurring subscription free.
+Doing it yourself is a good choice when you have more time than money, your needs are simple, and you are comfortable learning a platform. You will spend hours on layout, mobile checks and setup, and you will own every mistake.
 
-### Recurring Ecommerce Management Fees
+Hiring help makes sense when your site is part of how you earn money, when you need it to convert visitors into leads, or when your time is better spent running the business. You are paying for experience and for a site that is built to do a job.
 
-While online transactions have never been easier, facilitating online checkouts requires a significant extension of developer responsibility. Particularly, maintaining a secure place for transactions and ensuring that the customer has a simple and easy path to purchasing your products online. This also includes troubleshooting checkout issues such as failed transactions, invoice propagation, and revising page designs for better user experience. A painless online checkout experience is the absolute most important feature of an ecommerce website in today's market.
+AI tools can speed up parts of the work, like first-draft copy or image ideas. They do not replace strategy, testing or ownership of the result.
 
-## Total Monthly Cost of Website Ownership
+## What to ask in a quote
 
-For most of my business-orientated customers, basic hosting costs are covered by $15 - 20 a month which supports up to three websites and about 100K visitors a month.
+A good quote lets you compare options. Look for these:
 
-I only do maintenance plans for websites I've built personally, as the only way I can keep costs so low is because I intimately understand each and every gear, knob, and lever of the websites critical assets. Maintenance fees are just too variable to address in full here, but my plans start around $100 a month per-site for upkeep and maintenance with a pre-allocated number of service hours included. The best part for customers is that they don't spend extra on one-time services and recurring fees at initial start up and get all of their web services bundled into a single invoice.
+- **A clear scope.** How many pages, what features, and what is not included.
+- **Who owns what.** You should own your domain, your hosting account, your content and your site's code. Be wary of anyone who keeps them in their name.
+- **A launch plan.** Redirects from the old site, tracking, and testing before going live.
+- **Ongoing costs spelled out.** Hosting, care plans and renewals, with what each covers.
+- **What happens if you leave.** You should be able to move your site without being held hostage.
+
+Red flags include vague line items such as "design and development" with no detail, pressure to sign quickly, and agencies that cannot explain what you will be paying each month after launch.
+
+## Frequently asked questions
+
+### How much does a small business website cost?
+
+It depends on the tier above. A simple template site costs far less than a custom build, and an online store costs more than both. The pages, features and content you need decide it. [Request a quote](/#contact) and we will scope it with you.
+
+### Why is hosting cheap for some sites and expensive for others?
+
+Traffic, speed, support and how much the host manages for you. Basic hosting for a small site is inexpensive. A busy site or a store needs more capacity, better security and faster support.
+
+### Do I need a maintenance plan?
+
+If nobody on your team will update software, run backups and fix problems, yes. If you are comfortable doing it yourself, you can skip a plan and take on the risk. Many small businesses choose a plan so a site problem never becomes their problem.
+
+### Who should own my domain?
+
+You should. Register it in your own account, keep auto-renew on, and give your web team access rather than the other way around.
+
+## Get a quote for your site
+
+If you want a clear, scoped quote for your website, tell us about your business through the [contact form](/#contact). You can also read more about our [website design and build](/services/websites) service, or email us at info@wilson-walleser.com.

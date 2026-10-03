@@ -1,82 +1,128 @@
 ---
-title: "Google Analytics metrics for beginners"
+title: "GA4 metrics for beginners: what to track"
 slug: "google-analytics-metrics-for-beginners"
 status: "publish"
-date: "2020-04-16 00:52:12"
-modified: "2020-04-16 00:52:14"
-excerpt: "How do I get started with Google Analytics and web data? Here's what you need to know first."
+date: "2026-04-16"
+modified: "2026-10-03"
+excerpt: "A plain-English guide to the Google Analytics 4 metrics that matter: users, sessions, engagement, sources and key events, and how to read them."
 tags:
-  - "import:test-1"
-import:
-  batch: "test-1"
-  source_file: "Please_cart_blog_export_test_1_R0noh_posts.sql"
-  source_database: "xpaocwyi_staging"
-  source_table: "R0noh_posts"
-  dump_generated: "Sep 26, 2026 at 12:30 AM"
-  wp_id: 1022
-  wp_author_id: 2
-  wp_guid: "https://pleasecart.com/?p=1022"
-  editor: "gutenberg"
-  content_sha256: "26e8479751fb7ee1"
-  revisions_in_dump: 3
-  review_notes: []
+  - google analytics
+  - ga4
+  - analytics
+  - reporting
 ---
 
-# Google Analytics metrics for beginners
+# GA4 metrics for beginners: what to track
 
-## Session / Source / Pageviews
+Google Analytics has changed a lot since the older version most guides were written for. That version, Universal Analytics, has been retired. Google Analytics 4 (GA4) is what you use now, and several familiar terms mean something different or have been replaced.
 
-**Source / Medium**: Shows you where a goal completion originated
+This guide covers the handful of GA4 metrics that matter for a small business, what each one tells you, and what to do with it.
 
-**Source**: Search engines, Direct (bookmark, typed URL), a website where click originated
+## What changed from the old version
 
-**Medium**: Organic (web search), referral (linked from another site), CPC (cost-per-click model from PAC advertisements), email (clicks from our email list) not-set (does not fit into any of these categories)
+If you learned analytics a few years ago, this table maps the old terms to the new ones.
 
-**Pageview**: A pageview refers to each time a user views a page. By default, Google Analytics shows you which of your website’s pages are most popular based on pageviews.
+| Old term | In GA4 |
+| --- | --- |
+| Pageviews | Views (counted from the page_view event) |
+| Goals | Key events (any event you mark as important) |
+| Conversions | Key events (Google Ads still uses "conversion") |
+| Bounce rate | Engagement rate, with bounce rate as its opposite |
+| Goal completion location | Not needed; you track the event itself |
 
-**Session**: A session is a visit to your website, and it may consist of one or multiple pageviews. A session may also include a purchase or the completion of another goal. By default, sessions typically end at 30 minutes if the user is inactive. After the timeout, a new session can begin if the user interacts with the website again (if they visit another page on the website, for example).
+The biggest shift is that GA4 records everything as an event: a page view, a click, a form submission. A key event is just an event you tell Google matters to your business.
 
-**Bounce / Bounce Rate**
+## Traffic: users, sessions and views
 
-A *bounce* is a single-page session on your site. In Analytics, a bounce is calculated specifically as a session that triggers only a single request to the Analytics server, such as when a user opens a single page on your site and then exits without triggering any other requests to the Analytics server during that session.
+**Users** are the people (or really, browsers and devices) visiting your site. GA4 reports total users and active users. Active users are the ones who actually engaged with the site, and it is the number most reports lead with.
 
-Bounce rate is single-page sessions divided by all sessions or the percentage of all sessions on your site in which users viewed only a single page and triggered only a single request to the Analytics server. ([Google](https://support.google.com/analytics/answer/1009409?hl=en))
+**New users** are people visiting for the first time. A healthy mix of new and returning users usually means you are both reaching fresh people and giving old ones a reason to come back.
 
-**Exit Rate**
+**Sessions** are visits. One person can have several sessions. A session ends after a period of inactivity, 30 minutes by default.
 
-Exit rate is the percentage of people who left your site from that page. Exits may have viewed more than one page in a session.
+**Views** count each time a page loads. Use the "Pages and screens" report to see which pages get the most views. That tells you what your audience actually cares about.
 
-Exit Rate = Total Number of Exits / Total Number of Page Views
+## Sources and channels: where visitors come from
 
-## **Key Metrics**
+The "Traffic acquisition" report shows how people found you. Two ideas matter here.
 
-### Goal
+**Source / medium** pairs where the visitor came from (the source) with how they got there (the medium). Common pairings:
 
-A goal is completed when a user performs a series of actions that support your business goals.
+- google / organic: unpaid search results
+- google / cpc: paid search ads
+- (direct) / (none): typed your address, used a bookmark, or the source could not be identified
+- another site / referral: a link from another website
+- email: clicks from an email you sent, when the links are tagged
 
-- Make a purchase
-- Complete a contact form requesting a quote
-- Subscribe to an e-mail newsletter
-- Register as a member
-- Write a review
-- Share something on social media
-- Downloads your app
-- Requests a consultation
+**Default channel group** rolls these up into broad buckets like Organic Search, Paid Search, Direct, Referral and Email. Start here for a quick view of what is driving traffic.
 
-### Conversion
+If you see "(not set)" or a lot of Direct traffic, tracking links are often missing or the source is hidden. It is worth checking before drawing conclusions. GA4's default channel group now includes an "AI Assistant" channel for visits from tools like ChatGPT, Gemini and Copilot, but some AI traffic can still land in Referral or Direct, so check your referral sources instead of assuming. Visits from Google's AI Overviews and AI Mode count as Organic Search.
 
-**Goals that define conversions**:
+## Engagement: is anyone paying attention?
 
-A conversion is a calculated metrics which is recorded when a user completes an important action, or a sequence of actions.
+**Engaged sessions** are visits that lasted at least 10 seconds, included a key event, or had at least two page or screen views.
 
-The most basic type of goal is checkout. In this case, its usually a sequence of actions such as A > user added a product to cart B > user went through checkout process C > user completed checkout process and received order verification number.
+**Engagement rate** is engaged sessions divided by total sessions. A higher number generally means visitors found what they expected.
 
-**Goal 1**: Lead | Request for Quote = RFQ | Request for Pricing = RFP)
+**Bounce rate** is the opposite: the share of sessions that were not engaged. It is not the same as the old single-page definition, so do not compare it to numbers from older reports.
 
-**Goal 2**: Checkout
+**Average engagement time** shows how long your site was actually in the foreground for visitors.
 
-We set our most important goals to record as conversions, such as when a user fills out a lead or checks out online.
+A low engagement rate on a page that should hold attention, like a service page, is a sign the message, the page speed or the traffic source needs a closer look. If your pages are slow or confusing, our [websites](/services/websites) work focuses on that.
 
-**Goal completion location**: Usually a thank you page, order completion page, or quote submitted page which represented the final step in the users purchase journey.
+## Key events and conversion rate
 
-**Conversion rate**: The total number of people who visited the page divided by the number of people who completed a goal.
+Key events are the actions that matter to your bottom line. Examples:
+
+- A contact or quote form submission
+- A phone number click
+- A completed purchase
+- A newsletter signup
+- A booking or consultation request
+
+You set these up by tracking the event, then marking it as a key event in GA4. Name them clearly, such as `contact_form_submit` or `phone_click`, so reports stay readable.
+
+**Conversion rate** (or key event rate) is the number of sessions or users who completed a key event, divided by total sessions or users. If 1,000 sessions led to 25 form submissions, the rate is 2.5 percent. Many older guides, including an earlier version of this one, flipped that formula, so check the denominator in any report you read.
+
+Look at key event rate by source. A channel with modest traffic but a high rate may deserve more of your budget than one that sends a crowd that never acts.
+
+## A starter dashboard: five numbers
+
+If you only watch five things each month, make it these:
+
+1. **Active users**: are you reaching people?
+2. **Sessions by channel**: which sources bring them?
+3. **Engagement rate**: do they stay and explore?
+4. **Key events**: are they taking the actions you want?
+5. **Key event rate by channel**: which sources actually produce results?
+
+Compare against the previous month and the same month last year, since most businesses have seasonal swings.
+
+## Know the limits of your data
+
+GA4 is useful, but it is not a perfect count.
+
+- **Privacy settings and consent.** Visitors who decline cookies may not be tracked, and consent rules vary by region. Talk to whoever manages your site and legal needs.
+- **Ad blockers and browser limits.** Some visits never get recorded, so GA4 tends to undercount.
+- **Thresholding and modeled data.** In some reports, Google hides or estimates numbers to protect privacy, so small segments can look incomplete.
+- **Data retention.** Detailed event-level data in Explorations is kept for a limited time, and the setting is adjustable. Check yours so you do not lose history you need.
+
+Treat the numbers as a reliable direction, not an exact tally.
+
+## Common questions
+
+**What replaced bounce rate in GA4?** Engagement rate is the main measure, and bounce rate is available as its inverse.
+
+**Are conversions and key events the same?** In GA4 reports, key events is the current term for what used to be called conversions. Google Ads still uses "conversion" for actions it counts.
+
+**Do I need Google Tag Manager?** Not for basic tracking, but it makes custom events like button clicks and form submissions much easier to add and manage.
+
+**Can I connect GA4 to other tools?** Yes. Linking it to Google Search Console and Google Ads helps you see search and ad performance alongside site behavior.
+
+## Where to go next
+
+If you want a tour of the interface, read our [Google Analytics navigation guide](/blog/google-analytics-navigation-guide). If you are comparing tools to go with your reporting, see [how to find the right SEO tool](/blog/find-the-right-seo-tool). Our [email and analytics](/services/email-analytics) work covers tracking setup and plain-English reporting.
+
+## Not sure your tracking is right?
+
+If your reports do not match what you see in your business, or you are not sure which numbers to trust, tell us about your setup through the [contact form](/#contact). You will talk directly with the founders. You can also reach us at info@wilson-walleser.com.

@@ -1,151 +1,135 @@
 ---
-title: "Google analytics navigation guide"
+title: "Find Sales and Revenue in GA4: A Click-by-Click Guide"
 slug: "google-analytics-navigation-guide"
 status: "publish"
-date: "2020-04-16 01:22:15"
-modified: "2020-04-16 02:30:54"
-excerpt: "How do I find sales, checkouts, and revenue data in Google analytics? A click by click guide."
+date: "2026-04-16"
+modified: "2026-10-03"
+excerpt: "Where to find revenue, transactions, channels and product sales in Google Analytics 4, plus how to filter pages and fix missing ecommerce data."
 tags:
-  - "import:test-1"
-import:
-  batch: "test-1"
-  source_file: "Please_cart_blog_export_test_1_R0noh_posts.sql"
-  source_database: "xpaocwyi_staging"
-  source_table: "R0noh_posts"
-  dump_generated: "Sep 26, 2026 at 12:30 AM"
-  wp_id: 1027
-  wp_author_id: 2
-  wp_guid: "https://pleasecart.com/?p=1027"
-  editor: "gutenberg"
-  content_sha256: "29703c7325e4ced3"
-  revisions_in_dump: 8
-  review_notes: []
+  - analytics
+  - ga4
+  - ecommerce
+  - reporting
 ---
 
-# Google analytics navigation guide
+# Find Sales and Revenue in GA4: A Click-by-Click Guide
 
-This is a click by click, step by step walkthrough for checking transaction revenue in Google analytics. You'll learn how to view purchases, checkouts, revenue, and transactions through various menus within the Google analytics platform. You'll also learn how to use advanced search features such as regex to search for specific products from your e-Commerce store.
+This guide shows you where to find sales, transactions and revenue in Google Analytics 4 (GA4), step by step. It covers revenue by channel, email and referral sales, product performance, and how to filter reports down to specific pages or products.
 
-Navigation guide:
+An earlier version of this guide covered Universal Analytics, the older version of Google Analytics. That version no longer collects data, so everything below is for GA4. Google renames reports now and then. If a menu label differs from what you see, look for the closest match in the same section.
 
-1. Master Google Analytics category > parent category > sub-category
-2. [Secondary dimension](https://support.google.com/analytics/answer/6175970?hl=en): Secondary dimensions are located above the data table in the drop-down menu. Use the search feature to find dimensions faster
+## What you need before you start
 
-## **How to View Transactions in Google Analytics**
+- A GA4 property with ecommerce events set up. The report below only shows revenue if your site sends a `purchase` event with the order details.
+- Viewer access or higher to the property.
+- A date range that actually contains orders.
 
-### Transactions by Landing Page
+## Old Analytics menus and where they went
 
-1. Conversions > Ecommerce > Transactions:
-2. Set secondary dimension > Landing page (Where they entered the site)
+If you learned the old version, this table maps the habits to GA4.
 
-### Transactions by Channel
+| Old Universal Analytics path | Where to look in GA4 |
+|---|---|
+| Conversions > Ecommerce > Transactions | Reports > Ecommerce purchases (under Monetization in most properties) |
+| Conversions > Ecommerce > Product Performance | Reports > Ecommerce purchases (item views and purchases by product) |
+| Acquisition > All Traffic > Channels | Reports > Acquisition > Traffic acquisition |
+| Behavior > Site Content > All Pages | Reports > Engagement > Pages and screens |
+| Acquisition > Social | Traffic acquisition, filtered to social channels |
+| New vs Returning | Reports > Retention, or an Exploration |
 
-1. Conversions > Ecommerce > Sales Performance >
-2. Set secondary dimension: Default Channel Group
+## Find revenue and transactions
 
-### Transactions by Date - Daily, Weekly, and Monthly
+### Overall revenue and purchases
 
-1. Conversions > Ecommerce > Sales Performance
-2. Set date range in the top right corner
-3. Set compare data to custom period or previous period (matches same number of days but includes holidays and weekends )
-4. (Use Total Revenue, Conversion Rate, Average Order Value tabs toward the top)
+1. Open **Reports > Monetization > Overview**.
+2. Set the date range in the top right corner.
+3. Turn on **Compare** to see the previous period or the same period last year.
 
-## **How to Find Sales Data in Google Analytics**
+### Revenue by channel
 
-### Sales: Transactions by Channel
+Channels are groups like Organic Search, Paid Search, Direct, Referral, Email and Social.
 
-**(Organic, Paid, Direct, Referral, Email)**
+1. Open **Reports > Acquisition > Traffic acquisition**.
+2. Look at the **Session default channel group** column for each channel.
+3. Scroll to the right for conversions and revenue columns. If revenue isn't showing, check that your purchase event is firing and sends a value (see the troubleshooting section below).
 
-[UNDERSTANDING GOOGLE ANALYTICS CHANNELS](https://www.megalytic.com/blog/understanding-google-analytics-channels)
+Note that **User acquisition** shows how someone first arrived. **Traffic acquisition** shows how each visit arrived. For sales, Traffic acquisition is usually what you want.
 
-1. Acquisition > Overview.
-2. Make sure the “Conversion” dropdown is set to eCommerce.
-   **OR**
+### Revenue by landing page
 
-1. Acquisition > All Traffic > Channels
-2. Sort dimension for additional data: Full Referrer, Campaign, Language, Mobile
+1. Open **Reports > Engagement > Landing page**.
+2. Look at the conversions and revenue columns for each page where visits started.
 
-## **Sales: Email Marketing Revenue**
+### Email revenue
 
-1. Acquisition > Campaigns > All Campaigns
-2. Search 'email'
+1. Open **Reports > Acquisition > Traffic acquisition**.
+2. Change the first column to **Session source / medium** using the dropdown above the table.
+3. Search for `email` to see sales from your newsletters and automated emails.
 
-There are many ways to look at this data,
+This only works if your email links carry campaign tags (UTM parameters). Without them, email clicks often land in Direct.
 
-3. Acquisition> All Traffic> Source Medium>
-4. Click “Marketing List/email”
-5. Set Secondary Dimension > Campaign
+### Referral revenue
 
-### Sales: Referral Revenue Sources
+Referral traffic is visitors who arrive from links on other sites, including partners, directories and blogs.
 
-**(Traffic linked from the blog & 3****rd** **party link sharing around the internet)**
+1. Open **Reports > Acquisition > Traffic acquisition**.
+2. Filter the table to **Session default channel group** equals **Referral**.
+3. Switch the first column to **Session source / medium** to see which sites send sales.
 
-1. Acquisition > All Traffic > Referrals
+### Revenue by product
 
-## Sales: By Product
+1. Open **Reports > Ecommerce purchases** (listed under Monetization in most properties).
+2. Use the search box to find a product by name.
+3. Change the dimension to item name, item ID or item category to group results the way you think about your catalog.
 
-**Quantity, Unique Purchases, Revenue, AVG Price, Avg Quantity**
+## Filter to specific pages or products
 
-1. Conversions > Ecommerce > Product Performance
+Most GA4 report tables have a search box. It matches text that contains what you type, which is enough for one page or one product.
 
-Choose your Primary Dimension (Product, Product SKU, or Product Category)
+For example, to look at one page, type a short path such as `/services/websites` rather than the full web address with the domain. The report stores paths, not full URLs.
 
-·         Use the search bar to quickly find a product by name/brand
+To look at several pages or products at once, you have two options:
 
-## Regex: **How to Search Products in Google Analytics**
+1. **Add a filter or comparison.** Use a condition such as "page path matches regex" and enter several values separated by a pipe, like `/services/websites|/services/seo-content`. Do not add spaces around the pipe.
+2. **Build an Exploration.** Open **Explore** from the left menu, create a Free form report, and add a segment or filter on page path, item name or item ID.
 
-Advanced Search > Include > **Page** > RegEx Contains
+If the filter returns nothing, check that you are filtering on the right field. Searching a page title when the filter is set to a page path is the most common reason for an empty table.
 
-(**3rd Value** should be whatever you selected as your **secondary dimension** if you chose one other than the default "**page**")
+## Social traffic and new versus returning users
 
-2. ( BRAND A | BRAND B ) -- \*with no spaces\*
-3. ( URL page | URL page 2 ) -- \*with no spaces\*
-4. ( SKU A | SKU B ) -- \*with no spaces\*
+GA4 has no single social report. Open **Traffic acquisition** and filter to the Organic Social and Paid Social channel groups.
 
-·         For advanced searches, see [Reg. Expressions](http://andygibson.us/2013/10/helpful-regular-expressions-for-google-analytics/)
+For new versus returning users, look in **Reports > Retention**, or use an Exploration to split any report by user type.
 
-## **How to View Revenue and Transactions by Page in Google analytics**
+## If your revenue is blank or looks wrong
 
-### Search for a Page
+Blank revenue almost always means a tracking problem, not a reporting problem. Work through these in order:
 
-Common mistakes:
+1. **Is the purchase event firing?** Complete a test order with Google Tag Manager preview or GA4 DebugView open, and confirm a `purchase` event appears.
+2. **Does the event carry the details?** Revenue comes from the order value and item list sent with the event. If they're missing, GA4 has nothing to report.
+3. **Is it marked as a key event?** Conversion columns only count events you've flagged.
+4. **Is consent getting in the way?** Visitors who decline cookies may not be tracked, so GA4 can show fewer orders than your store does.
 
-Bad A) Take the full page URL and copy it into the analytics search bar.
+GA4 and your store will rarely match exactly. Ad blockers, declined cookies, different attribution rules and the way each tool counts a sale all cause small gaps. Treat your store as the source of truth for order totals and GA4 as the source for where those orders came from.
 
-Bad B) Forget to ensure that the default search is set to the proper dimension. (Must be set to appropriate search - for pages use Landing Page URL, Page, Full Referrer.
+One more setting worth checking: GA4 keeps detailed event data for a limited time, and standard properties can choose 2 or 14 months. Look at **Admin > Data settings > Data retention** and choose the longer option so your Explorations can look back further.
 
-If you try to search for a page title when the advance search function is set to "Source" this isn't going to work. Depending on which Google analytics tab you're in, the default 'advanced search' will change and you have to change it to your desired search category.
+## A monthly revenue check
 
-\*clicks [advanced search](https://webapps.stackexchange.com/questions/27714/advanced-filtering-in-google-analytics-using-or-statements) settings next to search tab\*
+Once a month, spend 15 minutes on this:
 
-Navigation:
+1. Compare total revenue in GA4 against your store for the same dates.
+2. Check revenue by channel and note which channels moved up or down.
+3. Check your top products and top landing pages.
+4. Confirm email and referral sales are still showing under the right sources.
+5. Write down one thing to change next month.
 
-1. Behavior > Site Content > All Pages
-2. Use a short URL without domain:
-3. **Good**: Page > containing > /get-a-quote/
-4. **Bad**: https://pleasecart.com/get-a-quote OR www.pleasecart.com/marketing-services/
+## Where to go from here
 
-## **How to Include Multiple Pages in Google Analytics Data**
+If you want to go further than the built-in reports, GA4 can export data to BigQuery, and Looker Studio can turn it into dashboards. Those are worth looking at once the basics are in place.
 
-2. Set advanced search to "Include" "Page" "**Matching RegExp**"
-3. To show combined metrics of multiple pages search = (URL|URL)
-4. In search bar: (/google-analytics-navigation-guide/)
-5. ( URL page | URL page 2 ) -- \*with no spaces\*
+New to the terms in these reports? Our guide to [Google Analytics metrics for beginners](/blog/google-analytics-metrics-for-beginners) explains them in plain English. If you're weighing how much your website drives sales, see [how much influence the internet has on customer purchases](/blog/how-much-influence-does-the-internet-have-on-customer-purchases).
 
-## **Sources: How to View Social Media and New Users in Google Analytics**
+## Numbers don't line up?
 
-**Acquisition Tab**: Find all info related to how users landed on PAC pages
-
-**Search Keywords for PAC Traffic (Google Traffic Only)**
-
-1. Acquisition > Search Console > Queries
-
-### Source: Social Media Traffic
-
-1. Acquisition > Social
-
-### Source: New VS Returning User
-
-1. Acquisition > Behavior > New VS Returning
-
----
+If revenue shows blank, or GA4 and your store disagree by a lot, the fix is usually in the tracking. We handle [tracking setup and reporting](/services/email-analytics), and explain the results in plain English. [Request a quote through our contact form](/#contact) and tell us what you're seeing, or email info@wilson-walleser.com.
