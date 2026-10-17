@@ -17,7 +17,7 @@ export default function ServiceCard({ service, index }: { service: Service; inde
         ))}
       </ul>
       <span className="card-more" aria-hidden="true">
-        Learn more →
+        See what this includes
       </span>
     </article>
   );

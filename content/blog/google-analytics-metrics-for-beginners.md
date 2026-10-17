@@ -14,6 +14,8 @@ tags:
 
 # GA4 metrics for beginners: what to track
 
+![](/images/blog/google-analytics-metrics-for-beginners.jpg)
+
 Google Analytics has changed a lot since the older version most guides were written for. That version, Universal Analytics, has been retired. Google Analytics 4 (GA4) is what you use now, and several familiar terms mean something different or have been replaced.
 
 This guide covers the handful of GA4 metrics that matter for a small business, what each one tells you, and what to do with it.

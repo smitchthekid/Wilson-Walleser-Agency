@@ -14,6 +14,8 @@ tags:
 
 # Strategies for Product Advertising Campaigns
 
+![](/images/blog/strategies-for-product-advertising-campaigns.jpg)
+
 The right advertising strategy depends on two things: what you sell and who else is selling it. A low-margin commodity and a high-margin specialty product need different plans, even if both run on the same platforms. Before you set a budget, you need to understand your margins, your customers' intent, and how crowded the auction is.
 
 ## Start with margin, not search volume

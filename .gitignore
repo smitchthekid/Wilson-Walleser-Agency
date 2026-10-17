@@ -2,3 +2,7 @@ node_modules
 dist
 .DS_Store
 .env
+
+# local tooling, not part of the site
+.agents/
+skills-lock.json

@@ -14,6 +14,8 @@ tags:
 
 # How Humans Search for Things Online: If That, Then This
 
+![](/images/blog/how-humans-search-for-things-online-if-that-then-this.jpg)
+
 People think in "if that, then this." If I want *that*, then I do *this* to get it. Sometimes we don't know what the thing is called, or how to get it. We type what we do know and hope the search box fills in the rest.
 
 That gap between what someone types and what they actually want is called search intent. If your site answers the real question, you get the visit. If it answers a different one, you get a quick click on the back button.

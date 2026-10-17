@@ -14,6 +14,8 @@ tags:
 
 # Find Sales and Revenue in GA4: A Click-by-Click Guide
 
+![](/images/blog/google-analytics-navigation-guide.jpg)
+
 This guide shows you where to find sales, transactions and revenue in Google Analytics 4 (GA4), step by step. It covers revenue by channel, email and referral sales, product performance, and how to filter reports down to specific pages or products.
 
 An earlier version of this guide covered Universal Analytics, the older version of Google Analytics. That version no longer collects data, so everything below is for GA4. Google renames reports now and then. If a menu label differs from what you see, look for the closest match in the same section.

@@ -34,16 +34,14 @@ export default function ServiceDetail() {
 
       <section className="section section-tight">
         <div className="container detail-grid">
-          <div>
-            <h2 className="detail-heading">What's included</h2>
-            <div className="included-grid">
-              {service.included.map((item) => (
-                <div key={item.title} className="included-item">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              ))}
-            </div>
+          <h2 className="detail-heading detail-heading-main">What's included</h2>
+          <div className="included-grid">
+            {service.included.map((item) => (
+              <div key={item.title} className="included-item">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
           </div>
           <aside className="detail-aside">
             <h2 className="aside-heading">A good fit for</h2>

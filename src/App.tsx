@@ -8,6 +8,7 @@ import ServiceDetail from './pages/ServiceDetail';
 import BlogIndex from './pages/BlogIndex';
 import BlogPost from './pages/BlogPost';
 import NotFound from './pages/NotFound';
+import ThemeLab from './components/ThemeLab';
 
 // Scroll to the top on each new page, or to the #section named in the link.
 function ScrollManager() {
@@ -38,6 +39,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <ThemeLab />
     </>
   );
 }
