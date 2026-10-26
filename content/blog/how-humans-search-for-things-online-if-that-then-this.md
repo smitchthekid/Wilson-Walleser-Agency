@@ -3,7 +3,7 @@ title: "How Humans Search for Things Online: If That, Then This"
 slug: "how-humans-search-for-things-online-if-that-then-this"
 status: "publish"
 date: "2026-02-19"
-modified: "2026-10-03"
+modified: "2026-10-26"
 excerpt: "How people really search, from Google to AI assistants, and how to match each kind of search intent with the right page on your site."
 tags:
   - seo
@@ -22,33 +22,36 @@ That gap between what someone types and what they actually want is called search
 
 ## The hammer story
 
-Bobby walks into a store and buys a hammer. A system watching only that purchase might guess he wants nails next. But Bobby bought the hammer to fix a loose fence board. Maybe he needs screws. Maybe he needs a new fence.
+Bobby walks into a hardware store and asks for a hammer. A clerk who only hears the word hands him a hammer and a box of nails. A better clerk asks what it's for. A fence board keeps working loose, Bobby says, and he has already nailed it back twice. What he actually needs is a few screws, or maybe a new post.
 
-Search works the same way. A query is a clue, not the whole story. A person can ask a store clerk a follow-up question. A search engine has to guess from the words, the context, and what people like them did before.
+Search works the same way. A query is a clue, not the whole story. The clerk could ask a follow-up question. A search engine can't, so it guesses from the words, the context, and what other people who typed the same thing did next.
 
 ## The four kinds of search intent
 
-Most searches fall into one of four buckets. Knowing which one you are writing for tells you what kind of page to build.
+Most searches fall into one of four buckets. Knowing which one you are writing for tells you what kind of page to build. Take a local plumbing company as the example, and look at the searches its customers make:
 
 | Intent | What the person wants | Example search | Page that fits |
 | --- | --- | --- | --- |
-| Informational | To learn something | "why is my website slow on my phone" | Guide or blog post |
-| Navigational | To reach a specific place | "your business name login" | Clear homepage, contact and location pages |
-| Commercial | To compare options before choosing | "best website platform for a small shop" | Comparison, buyer's guide, or service page |
-| Transactional | To buy or book now | "web designer near me" | Landing page with a clear next step |
+| Informational | To learn something | "why is my faucet dripping" | Guide or blog post |
+| Commercial | To compare options before choosing | "fix a faucet yourself or call a plumber" | Comparison, buyer's guide, or service page |
+| Transactional | To buy or book now | "plumber near me" | Landing page with a clear next step |
+| Navigational | To reach a specific business or page | "Smith Plumbing phone number" | Clear homepage, contact and location pages |
 
-The examples above are illustrative, not pulled from any keyword report. The point is the pattern: the same person often moves through several of these in a single sitting.
+These intents are not four different kinds of people. They are often one person at different points in the same problem.
 
 ## One person, one chain of searches
 
-Here is a made-up but typical chain for a homeowner with a website problem:
+Picture a homeowner with a faucet that won't stop dripping. Over an evening or a week, their searches might go like this:
 
-1. "website won't load on mobile" (informational)
-2. "why is my site slow" (informational, getting more specific)
-3. "website speed fix vs new website" (commercial)
-4. "web designer near me" (transactional)
+1. "faucet dripping when turned off" (informational)
+2. "how to fix a dripping faucet" (informational, getting more specific)
+3. "fix a faucet yourself or call a plumber" (commercial)
+4. "plumber near me" (transactional)
+5. "Smith Plumbing phone number" (navigational)
 
-Each step is an "if that, then this." If the page loads slowly, then I need to know why. If it is a deeper problem, then I need options. If I need help, then I need someone to hire. A business that only has a page for step four misses the three searches that came first.
+Each step is an "if that, then this." If the faucet keeps dripping, then I need to know why. If I know why, then I need to know how to fix it. If the fix looks hard, then I need to decide whether to hire someone. If I've picked someone, then I need a way to reach them.
+
+A plumber who only has a page for step four misses the searches that came first. By the time the homeowner is ready to hire, they may already trust the company whose guide answered their first question.
 
 ## What happens before, during, and after a search
 
